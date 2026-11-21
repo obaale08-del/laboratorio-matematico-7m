@@ -1,0 +1,27 @@
+==================================================
+DOSSIER FORMAL: PETRUSKA_FENIX PIPELINE (HEPTÁLOGO DEFINITIVO)
+Fecha de generación: 2026-09-11 16:17:31
+Entorno: Termux / Android Local Validation
+==================================================
+
+1. TEORÍA DE LA COMPLEJIDAD (P vs NP & Cook-Levin)
+   - Clases P, NP, Reducciones Polinómicas, Circuitos y Tableaux
+
+2. TEORÍA ANALÍTICA DE NÚMEROS (Hipótesis de Riemann)
+   - Franja Crítica y ceros no triviales
+
+3. DINÁMICA DE FLUIDOS (Navier-Stokes)
+   - VelocityField y GlobalSmoothness tridimensional
+
+4. TOPOLOGÍA DIFERENCIAL (Conjetura de Poincaré)
+   - 3-variedades compactas y simplemente conexas
+
+5. TEORÍA CUÁNTICA DE CAMPOS (Yang-Mills y Salto de Masa)
+   - Grupos de norma y acotación espectral estricta
+
+6. GEOMETRÍA ARITMÉTICA (Birch y Swinnerton-Dyer)
+   - Curvas elípticas, rango algebraico y función L
+
+7. GEOMETRÍA ALGEBRAICA (Conjetura de Hodge)
+   - Ciclos algebraicos y cohomología de de Rham
+==================================================

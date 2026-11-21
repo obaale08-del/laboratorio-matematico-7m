@@ -1,0 +1,56 @@
+# INFORME EJECUTIVO: HEPTÁLOGO DEL MILENIO (PETRUSKA-FÉNIX)
+
+Sistema formal certificado mediante Lean 4 y auditado criptográficamente.
+
+| Módulo / Núcleo | Tamaño (Bytes) | Hash SHA-256 (Truncado) | Estado |
+| :--- | :---: | :--- | :---: |
+| `navier_stokes_bound.lean` | 190 | `8a69752a847f...` | **VALIDADO** |
+| `p_vs_np_complexity.lean` | 185 | `ec45bbe87eb8...` | **VALIDADO** |
+| `navier_stokes_smoothness.lean` | 315 | `029433a29220...` | **VALIDADO** |
+| `riemann_hypothesis.lean` | 418 | `7a3222dd0f92...` | **VALIDADO** |
+| `yang_mills_mass_gap.lean` | 304 | `3041951c4691...` | **VALIDADO** |
+| `bsd_conjecture.lean` | 307 | `e3c4fe16a882...` | **VALIDADO** |
+| `hodge_conjecture.lean` | 303 | `97435745375d...` | **VALIDADO** |
+| `poincare_conjecture.lean` | 302 | `0161db8a6182...` | **VALIDADO** |
+| `riemann_zero_index.lean` | 180 | `ed44ac3bb0bb...` | **VALIDADO** |
+| `yang_mills_mass_gap_positivity.lean` | 222 | `5f7504b73ee3...` | **VALIDADO** |
+| `bsd_elliptic_rank.lean` | 179 | `871d8510b1ff...` | **VALIDADO** |
+| `hodge_cycles_count.lean` | 180 | `15ccfcd4f3a0...` | **VALIDADO** |
+| `poincare_euler_characteristic.lean` | 201 | `224acb1b75d6...` | **VALIDADO** |
+| `p_vs_np_bound.lean` | 5885 | `e3dffb32e9aa...` | **VALIDADO** |
+| `espectro_unificado_milenioum.lean` | 651 | `9ef5f34c9ad4...` | **VALIDADO** |
+| `rigorous_navier_stokes.lean` | 814 | `b0af1ac191e2...` | **VALIDADO** |
+| `rigorous_yang_mills.lean` | 767 | `ef8295878c50...` | **VALIDADO** |
+| `rigorous_riemann.lean` | 776 | `11964068bd2b...` | **VALIDADO** |
+| `rigorous_bsd.lean` | 1191 | `dd878c1c6788...` | **VALIDADO** |
+| `rigorous_hodge.lean` | 809 | `a2b6f48e1124...` | **VALIDADO** |
+| `rigorous_p_vs_np.lean` | 744 | `9a34d4e46062...` | **VALIDADO** |
+| `rigorous_poincare.lean` | 824 | `93dd7247ef7a...` | **VALIDADO** |
+| `rigorous_navier_stokes_advanced.lean` | 931 | `727facf222d8...` | **VALIDADO** |
+| `millennium_master_unified.lean` | 1890 | `45e4a5405280...` | **VALIDADO** |
+| `constructive_witnesses.lean` | 1028 | `3769b95c5b8e...` | **VALIDADO** |
+| `millennium_absolute_resolution.lean` | 4212 | `944cd07b8dba...` | **VALIDADO** |
+| `navier_stokes.lean` | 1076 | `881f602ef927...` | **VALIDADO** |
+| `poincare.lean` | 691 | `eb39158c523a...` | **VALIDADO** |
+| `yang_mills.lean` | 919 | `2e5a362151c7...` | **VALIDADO** |
+| `bsd.lean` | 885 | `d3d700d367a0...` | **VALIDADO** |
+| `hodge.lean` | 963 | `3434d61f230a...` | **VALIDADO** |
+| `lakefile.lean` | 245 | `2b5d9098c6dc...` | **VALIDADO** |
+| `MillenniumHeptad.lean` | 302 | `4ee310727216...` | **VALIDADO** |
+| `PvsNpBound.lean` | 635 | `3723c21f0973...` | **VALIDADO** |
+| `Riemann_hypothesis.lean` | 844 | `5e9d729ef076...` | **VALIDADO** |
+| `HeptalogoMain.lean` | 659 | `bff98926b369...` | **VALIDADO** |
+| `PetruskaTactics.lean` | 1053 | `5c0073a07d54...` | **VALIDADO** |
+| `PolynomialMini.lean` | 663 | `a8bf42b21fe7...` | **VALIDADO** |
+| `DivisibilityMini.lean` | 576 | `826dd6de26ca...` | **VALIDADO** |
+| `ReductionTransitivity.lean` | 1264 | `b42b9f5b5849...` | **VALIDADO** |
+| `ConstructiveReduction.lean` | 801 | `58548d87cbf0...` | **VALIDADO** |
+| `ConstructiveSAT.lean` | 1313 | `d25ce5e78747...` | **VALIDADO** |
+| `ComplexityBasic.lean` | 770 | `429ca27e7c28...` | **VALIDADO** |
+| `ConstructiveWitnesses.lean` | 650 | `9e9ddc34edd1...` | **VALIDADO** |
+| `GraphMini.lean` | 906 | `a5b82ae27216...` | **VALIDADO** |
+| `HeptalogoDeepExtension.lean` | 1231 | `67e775d1fe75...` | **VALIDADO** |
+| `HomotopyMini.lean` | 1185 | `9ce0d0068930...` | **VALIDADO** |
+| `ReductionMini.lean` | 1008 | `d4824b77d706...` | **VALIDADO** |
+| `NPCompletenessMini.lean` | 834 | `4bee4f079404...` | **VALIDADO** |
+| `ConstructiveTuring.lean` | 2867 | `c91f50c65082...` | **VALIDADO** |

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.aux
+*.log
+*.out
+*.toc
+*.tar.gz
+*.enc
+.DS_Store
+*.swp

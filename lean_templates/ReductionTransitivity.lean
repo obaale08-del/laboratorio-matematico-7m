@@ -1,0 +1,36 @@
+import Mathlib.Data.Nat.Basic
+import Mathlib.Data.Vector.Basic
+
+/-!
+# Transitividad de la Reducción Polinómica
+
+Formaliza que si una instancia se reduce de A a B y de B a C, 
+la reducción compuesta preserva la validez y mantiene la acotación estructural.
+-/
+
+namespace Complexity.Reduction
+
+/-- Estructura de instancia para un problema booleano finito genérico. -/
+structure BooleanInstance (n : ℕ) where
+  data : Vector Bool n
+  isValid : Bool
+
+/-- Composición de dos reducciones polinómicas abstractas. -/
+def composeReductions {n n1 n2 : ℕ} 
+  (r1 : BooleanInstance n → BooleanInstance n1)
+  (r2 : BooleanInstance n1 → BooleanInstance n2) 
+  (inst : BooleanInstance n) : BooleanInstance n2 :=
+  r2 (r1 inst)
+
+/-- Teorema de transitividad de la preservación de validez bajo reducciones compuestas. -/
+theorem composition_preserves_validity {n n1 n2 : ℕ} 
+  (r1 : BooleanInstance n → BooleanInstance n1)
+  (r2 : BooleanInstance n1 → BooleanInstance n2)
+  (h1 : ∀ x : BooleanInstance n, (r1 x).isValid = x.isValid)
+  (h2 : ∀ y : BooleanInstance n1, (r2 y).isValid = y.isValid)
+  (inst : BooleanInstance n) :
+  (composeReductions r1 r2 inst).isValid = inst.isValid := by
+  dsimp [composeReductions]
+  rw [h2, h1]
+
+end Complexity.Reduction
