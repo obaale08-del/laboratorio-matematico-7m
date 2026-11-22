@@ -15,7 +15,6 @@ PROBLEMS: dict[str, list[str]] = {
         r"\bzeta\b",
         r"\bzetazero\b",
         r"\bsiegelz\b",
-        r"\bturing\b",
         r"linea.?critica|línea.?crítica",
     ],
     "p_vs_np": [
@@ -38,7 +37,7 @@ PROBLEMS: dict[str, list[str]] = {
     "hodge": [
         r"\bhodge\b",
         r"\bcohomolog",
-        r"\bciclos?\b",
+        r"\bciclos?\s+(de\s+hodge|algebraic\w*|anal[íi]tic\w*)\b",
     ],
     "birch_swinnerton_dyer": [
         r"\bbirch\b",

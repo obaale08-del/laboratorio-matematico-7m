@@ -2,7 +2,7 @@
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
   "total_files": 81,
-  "bridge_file_count": 27,
+  "bridge_file_count": 22,
   "bridge_files": [
     {
       "path": "docs/HEPTALOGO_MANIFEST.md",
@@ -203,33 +203,6 @@
       "lean_markers": 0
     },
     {
-      "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
-      "problem_count": 2,
-      "problems": [
-        "navier_stokes",
-        "hodge"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "docs/GUIA_CLI_MOVIL.md",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "hodge"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/ConstructiveTuring.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "p_vs_np"
-      ],
-      "lean_markers": 0
-    },
-    {
       "path": "lean_templates/constructive_witnesses.lean",
       "problem_count": 2,
       "problems": [
@@ -244,15 +217,6 @@
       "problems": [
         "navier_stokes",
         "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/p_vs_np_bound.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "p_vs_np"
       ],
       "lean_markers": 0
     },
@@ -282,15 +246,6 @@
         "poincare"
       ],
       "lean_markers": 0
-    },
-    {
-      "path": "scripts/generar_cronica_movil.py",
-      "problem_count": 2,
-      "problems": [
-        "navier_stokes",
-        "hodge"
-      ],
-      "lean_markers": 0
     }
   ],
   "lean_markers_by_problem": {
@@ -303,11 +258,11 @@
     "poincare": 2
   },
   "problem_file_counts": {
-    "riemann": 24,
+    "riemann": 21,
     "p_vs_np": 17,
     "navier_stokes": 11,
     "yang_mills": 21,
-    "hodge": 21,
+    "hodge": 18,
     "birch_swinnerton_dyer": 15,
     "poincare": 25
   },
@@ -325,7 +280,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 13.6714,
+        "elapsed_seconds": 13.163,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -341,7 +296,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 14.2125
+        "elapsed_seconds": 11.5367
       }
     },
     "parallel_verify": {
@@ -352,7 +307,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.4536,
+        "elapsed_seconds": 9.3885,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

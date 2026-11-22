@@ -3,24 +3,21 @@
   "total_scanned_files": 81,
   "problems_summary": {
     "riemann": {
-      "file_count": 24,
+      "file_count": 21,
       "files": [
         "README.md",
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
-        "docs/GUIA_CLI_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/RED_MILENIO.md",
         "docs/milenio_cadena.json",
         "docs/milenio_red.json",
         "docs/millennium_dossier_resumen.txt",
-        "lean_templates/ConstructiveTuring.lean",
         "lean_templates/Riemann_hypothesis.lean",
         "lean_templates/espectro_unificado_milenioum.lean",
         "lean_templates/hodge.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "lean_templates/p_vs_np_bound.lean",
         "lean_templates/riemann_hypothesis.lean",
         "lean_templates/riemann_zero_index.lean",
         "lean_templates/rigorous_riemann.lean",
@@ -96,12 +93,10 @@
       ]
     },
     "hodge": {
-      "file_count": 21,
+      "file_count": 18,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
-        "docs/CRONICA_Y_ESTADO_MOVIL.md",
-        "docs/GUIA_CLI_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
         "docs/RED_MILENIO.md",
@@ -117,7 +112,6 @@
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
         "lean_templates/rigorous_hodge.lean",
-        "scripts/generar_cronica_movil.py",
         "scripts/milenio_mapa.py"
       ]
     },
@@ -224,14 +218,12 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6430,
+      "size_bytes": 6439,
       "problems": [
-        "navier_stokes",
-        "hodge"
+        "navier_stokes"
       ],
       "hit_counts": {
-        "navier_stokes": 1,
-        "hodge": 1
+        "navier_stokes": 1
       },
       "lean_markers": 0
     },
@@ -239,14 +231,8 @@
       "path": "docs/GUIA_CLI_MOVIL.md",
       "ext": ".md",
       "size_bytes": 1867,
-      "problems": [
-        "riemann",
-        "hodge"
-      ],
-      "hit_counts": {
-        "riemann": 1,
-        "hodge": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -294,7 +280,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5429,
+      "size_bytes": 5276,
       "problems": [
         "riemann",
         "yang_mills",
@@ -330,7 +316,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 7558,
+      "size_bytes": 7725,
       "problems": [
         "riemann",
         "yang_mills",
@@ -338,9 +324,9 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 16,
+        "riemann": 17,
         "yang_mills": 21,
-        "hodge": 21,
+        "hodge": 22,
         "poincare": 22
       },
       "lean_markers": 0
@@ -348,7 +334,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 27927,
+      "size_bytes": 27758,
       "problems": [
         "riemann",
         "yang_mills",
@@ -357,9 +343,9 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 47,
+        "riemann": 43,
         "yang_mills": 46,
-        "hodge": 45,
+        "hodge": 41,
         "birch_swinnerton_dyer": 2,
         "poincare": 53
       },
@@ -438,11 +424,9 @@
       "ext": ".lean",
       "size_bytes": 2867,
       "problems": [
-        "riemann",
         "p_vs_np"
       ],
       "hit_counts": {
-        "riemann": 5,
         "p_vs_np": 1
       },
       "lean_markers": 0
@@ -765,7 +749,7 @@
         "p_vs_np": 1,
         "navier_stokes": 2,
         "yang_mills": 5,
-        "hodge": 10,
+        "hodge": 9,
         "birch_swinnerton_dyer": 7,
         "poincare": 2
       },
@@ -834,11 +818,9 @@
       "ext": ".lean",
       "size_bytes": 5885,
       "problems": [
-        "riemann",
         "p_vs_np"
       ],
       "hit_counts": {
-        "riemann": 2,
         "p_vs_np": 5
       },
       "lean_markers": 0
@@ -936,7 +918,7 @@
         "poincare"
       ],
       "hit_counts": {
-        "hodge": 4,
+        "hodge": 3,
         "poincare": 1
       },
       "lean_markers": 1
@@ -1106,12 +1088,10 @@
       "ext": ".py",
       "size_bytes": 8705,
       "problems": [
-        "navier_stokes",
-        "hodge"
+        "navier_stokes"
       ],
       "hit_counts": {
-        "navier_stokes": 1,
-        "hodge": 1
+        "navier_stokes": 1
       },
       "lean_markers": 0
     },
@@ -1134,7 +1114,7 @@
     {
       "path": "scripts/milenio_mapa.py",
       "ext": ".py",
-      "size_bytes": 5066,
+      "size_bytes": 5087,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1144,7 +1124,7 @@
       "hit_counts": {
         "riemann": 1,
         "yang_mills": 1,
-        "hodge": 1,
+        "hodge": 2,
         "poincare": 1
       },
       "lean_markers": 0

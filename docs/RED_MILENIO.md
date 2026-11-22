@@ -4,23 +4,20 @@ Archivos escaneados: **81**
 
 ## Cobertura por problema
 
-### `riemann` (24 archivos)
+### `riemann` (21 archivos)
 - `README.md`
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
-- `docs/GUIA_CLI_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/RED_MILENIO.md`
 - `docs/milenio_cadena.json`
 - `docs/milenio_red.json`
 - `docs/millennium_dossier_resumen.txt`
-- `lean_templates/ConstructiveTuring.lean`
 - `lean_templates/Riemann_hypothesis.lean`
 - `lean_templates/espectro_unificado_milenioum.lean`
 - `lean_templates/hodge.lean`
 - `lean_templates/millennium_absolute_resolution.lean`
 - `lean_templates/millennium_master_unified.lean`
-- `lean_templates/p_vs_np_bound.lean`
 - `lean_templates/riemann_hypothesis.lean`
 - `lean_templates/riemann_zero_index.lean`
 - `lean_templates/rigorous_riemann.lean`
@@ -85,11 +82,9 @@ Archivos escaneados: **81**
 - `lean_templates/yang_mills_mass_gap_positivity.lean`
 - `scripts/milenio_mapa.py`
 
-### `hodge` (21 archivos)
+### `hodge` (18 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
-- `docs/CRONICA_Y_ESTADO_MOVIL.md`
-- `docs/GUIA_CLI_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
 - `docs/RED_MILENIO.md`
@@ -105,7 +100,6 @@ Archivos escaneados: **81**
 - `lean_templates/millennium_absolute_resolution.lean`
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_hodge.lean`
-- `scripts/generar_cronica_movil.py`
 - `scripts/milenio_mapa.py`
 
 ### `birch_swinnerton_dyer` (15 archivos)
