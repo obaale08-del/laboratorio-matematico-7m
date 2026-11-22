@@ -1,6 +1,7 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
-  "total_files": 72,
+  "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
+  "total_files": 73,
   "bridge_file_count": 23,
   "bridge_files": [
     {
@@ -271,5 +272,45 @@
     "hodge": 17,
     "birch_swinnerton_dyer": 15,
     "poincare": 24
+  },
+  "verifiers_status": {
+    "verify_zeros": "ok",
+    "turing_certify": "timeout",
+    "parallel_verify": "ok"
+  },
+  "verifiers": {
+    "verify_zeros": {
+      "status": "ok",
+      "script": "scripts/verify_zeros.py",
+      "data": {
+        "start_index": 1,
+        "count": 100,
+        "dps": 30,
+        "tolerance": "1.0e-24",
+        "elapsed_seconds": 15.0874,
+        "anomalies": [],
+        "errors": [],
+        "all_within_tolerance": true
+      }
+    },
+    "turing_certify": {
+      "status": "timeout",
+      "script": "scripts/turing_certify.py",
+      "timeout_s": 25
+    },
+    "parallel_verify": {
+      "status": "ok",
+      "script": "scripts/parallel_verify.py",
+      "data": {
+        "start_index": 1,
+        "count": 200,
+        "dps": 30,
+        "workers": 8,
+        "elapsed_seconds": 6.0594,
+        "anomalies": [],
+        "errors": [],
+        "all_within_tolerance": true
+      }
+    }
   }
 }

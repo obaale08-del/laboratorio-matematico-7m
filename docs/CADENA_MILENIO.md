@@ -2,6 +2,15 @@
 
 Archivos puente (conectan 2 o más problemas): **23**
 
+## Verificaciones numéricas y certificación
+
+- `verify_zeros` (`scripts/verify_zeros.py`): **ok**
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 15.0874, "anomalies": []}`
+- `turing_certify` (`scripts/turing_certify.py`): **timeout**
+  - Detalle: `timeout tras 25s`
+- `parallel_verify` (`scripts/parallel_verify.py`): **ok**
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 6.0594, "anomalies": []}`
+
 ## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea
 
 - `riemann`: **22** archivos | **1** marcadores Lean

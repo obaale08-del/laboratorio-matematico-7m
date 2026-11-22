@@ -1,6 +1,6 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 72,
+  "total_scanned_files": 73,
   "problems_summary": {
     "riemann": {
       "file_count": 22,
@@ -178,7 +178,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 2573,
+      "size_bytes": 3246,
       "problems": [
         "riemann",
         "yang_mills",
@@ -186,10 +186,10 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 9,
-        "yang_mills": 13,
-        "hodge": 12,
-        "poincare": 13
+        "riemann": 11,
+        "yang_mills": 16,
+        "hodge": 14,
+        "poincare": 15
       },
       "lean_markers": 0
     },
@@ -238,7 +238,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4650,
+      "size_bytes": 5124,
       "problems": [
         "riemann",
         "yang_mills",
@@ -266,7 +266,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 4839,
+      "size_bytes": 6970,
       "problems": [
         "riemann",
         "yang_mills",
@@ -274,17 +274,17 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 11,
-        "yang_mills": 16,
-        "hodge": 14,
-        "poincare": 17
+        "riemann": 15,
+        "yang_mills": 20,
+        "hodge": 18,
+        "poincare": 21
       },
       "lean_markers": 0
     },
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 23291,
+      "size_bytes": 25777,
       "problems": [
         "riemann",
         "yang_mills",
@@ -293,11 +293,11 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 37,
-        "yang_mills": 36,
-        "hodge": 31,
+        "riemann": 45,
+        "yang_mills": 44,
+        "hodge": 39,
         "birch_swinnerton_dyer": 2,
-        "poincare": 43
+        "poincare": 51
       },
       "lean_markers": 0
     },
@@ -323,6 +323,14 @@
         "birch_swinnerton_dyer": 3,
         "poincare": 2
       },
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/verificacion_numerica.json",
+      "ext": ".json",
+      "size_bytes": 1082,
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -1054,7 +1062,7 @@
     {
       "path": "scripts/tejer_red.py",
       "ext": ".py",
-      "size_bytes": 4093,
+      "size_bytes": 8771,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0

@@ -1,6 +1,6 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **72**
+Archivos escaneados: **73**
 
 ## Cobertura por problema
 
