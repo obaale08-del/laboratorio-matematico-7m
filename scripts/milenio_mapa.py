@@ -62,13 +62,26 @@ def _scan_file(path: Path) -> dict[str, Any]:
     matched_problems: list[str] = []
     hit_counts: dict[str, int] = {}
 
+    core_pat_re = re.compile(
+        r"riemann|zeta|navier|stokes|yang|mills|hodge|poincar|bsd|p\s*vs\.?\s*np|np[-_]?completo",
+        flags=re.IGNORECASE,
+    )
+
     for prob, patterns in PROBLEMS.items():
         total = 0
+        core_hits = 0
         for pat in patterns:
-            total += len(re.findall(pat, text, flags=re.IGNORECASE))
-        if total > 0:
+            matches = re.findall(pat, text, flags=re.IGNORECASE)
+            cnt = len(matches)
+            total += cnt
+            if cnt > 0 and core_pat_re.search(pat):
+                core_hits += cnt
+        # Requiere al menos 2 coincidencias si solo hubo términos secundarios
+        if total > 0 and (core_hits >= 1 or total >= 2):
             matched_problems.append(prob)
             hit_counts[prob] = total
+
+
 
     lean_markers = len(LEAN_MARKERS.findall(text)) if path.suffix == ".lean" else 0
     return {

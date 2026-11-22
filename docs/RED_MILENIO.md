@@ -4,8 +4,7 @@ Archivos escaneados: **81**
 
 ## Cobertura por problema
 
-### `riemann` (21 archivos)
-- `README.md`
+### `riemann` (20 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
@@ -27,27 +26,17 @@ Archivos escaneados: **81**
 - `scripts/verify_riemann_zeros.py`
 - `scripts/verify_zeros.py`
 
-### `p_vs_np` (17 archivos)
-- `docs/HEPTALOGO_MANIFEST.md`
+### `p_vs_np` (8 archivos)
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/ComplexityBasic.lean`
 - `lean_templates/ConstructiveReduction.lean`
 - `lean_templates/ConstructiveSAT.lean`
-- `lean_templates/ConstructiveTuring.lean`
-- `lean_templates/ConstructiveWitnesses.lean`
-- `lean_templates/GraphMini.lean`
 - `lean_templates/NPCompletenessMini.lean`
 - `lean_templates/PvsNpBound.lean`
-- `lean_templates/ReductionMini.lean`
-- `lean_templates/constructive_witnesses.lean`
-- `lean_templates/millennium_absolute_resolution.lean`
-- `lean_templates/millennium_master_unified.lean`
 - `lean_templates/p_vs_np_bound.lean`
-- `lean_templates/p_vs_np_complexity.lean`
 - `lean_templates/rigorous_p_vs_np.lean`
 
-### `navier_stokes` (11 archivos)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md`
+### `navier_stokes` (10 archivos)
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/espectro_unificado_milenioum.lean`
@@ -57,7 +46,7 @@ Archivos escaneados: **81**
 - `lean_templates/navier_stokes_bound.lean`
 - `lean_templates/rigorous_navier_stokes.lean`
 - `lean_templates/rigorous_navier_stokes_advanced.lean`
-- `scripts/generar_cronica_movil.py`
+- `scripts/milenio_mapa.py`
 
 ### `yang_mills` (21 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
@@ -102,7 +91,7 @@ Archivos escaneados: **81**
 - `lean_templates/rigorous_hodge.lean`
 - `scripts/milenio_mapa.py`
 
-### `birch_swinnerton_dyer` (15 archivos)
+### `birch_swinnerton_dyer` (16 archivos)
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
 - `docs/RED_MILENIO.md`
@@ -118,8 +107,9 @@ Archivos escaneados: **81**
 - `lean_templates/millennium_absolute_resolution.lean`
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_bsd.lean`
+- `scripts/milenio_mapa.py`
 
-### `poincare` (25 archivos)
+### `poincare` (20 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
@@ -128,7 +118,6 @@ Archivos escaneados: **81**
 - `docs/milenio_cadena.json`
 - `docs/milenio_red.json`
 - `docs/millennium_dossier_resumen.txt`
-- `lean_templates/HeptalogoDeepExtension.lean`
 - `lean_templates/HeptalogoMain.lean`
 - `lean_templates/HomotopyMini.lean`
 - `lean_templates/MillenniumHeptad.lean`
@@ -136,12 +125,8 @@ Archivos escaneados: **81**
 - `lean_templates/hodge.lean`
 - `lean_templates/millennium_absolute_resolution.lean`
 - `lean_templates/millennium_master_unified.lean`
-- `lean_templates/navier_stokes.lean`
 - `lean_templates/poincare.lean`
 - `lean_templates/poincare_conjecture.lean`
 - `lean_templates/poincare_euler_characteristic.lean`
-- `lean_templates/rigorous_hodge.lean`
-- `lean_templates/rigorous_navier_stokes_advanced.lean`
 - `lean_templates/rigorous_poincare.lean`
-- `lean_templates/yang_mills.lean`
 - `scripts/milenio_mapa.py`

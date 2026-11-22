@@ -3,9 +3,8 @@
   "total_scanned_files": 81,
   "problems_summary": {
     "riemann": {
-      "file_count": 21,
+      "file_count": 20,
       "files": [
-        "README.md",
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/HEPTALOGO_MANIFEST.md",
@@ -29,31 +28,21 @@
       ]
     },
     "p_vs_np": {
-      "file_count": 17,
+      "file_count": 8,
       "files": [
-        "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/ComplexityBasic.lean",
         "lean_templates/ConstructiveReduction.lean",
         "lean_templates/ConstructiveSAT.lean",
-        "lean_templates/ConstructiveTuring.lean",
-        "lean_templates/ConstructiveWitnesses.lean",
-        "lean_templates/GraphMini.lean",
         "lean_templates/NPCompletenessMini.lean",
         "lean_templates/PvsNpBound.lean",
-        "lean_templates/ReductionMini.lean",
-        "lean_templates/constructive_witnesses.lean",
-        "lean_templates/millennium_absolute_resolution.lean",
-        "lean_templates/millennium_master_unified.lean",
         "lean_templates/p_vs_np_bound.lean",
-        "lean_templates/p_vs_np_complexity.lean",
         "lean_templates/rigorous_p_vs_np.lean"
       ]
     },
     "navier_stokes": {
-      "file_count": 11,
+      "file_count": 10,
       "files": [
-        "docs/CRONICA_Y_ESTADO_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/espectro_unificado_milenioum.lean",
@@ -63,7 +52,7 @@
         "lean_templates/navier_stokes_bound.lean",
         "lean_templates/rigorous_navier_stokes.lean",
         "lean_templates/rigorous_navier_stokes_advanced.lean",
-        "scripts/generar_cronica_movil.py"
+        "scripts/milenio_mapa.py"
       ]
     },
     "yang_mills": {
@@ -116,7 +105,7 @@
       ]
     },
     "birch_swinnerton_dyer": {
-      "file_count": 15,
+      "file_count": 16,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -132,11 +121,12 @@
         "lean_templates/bsd_elliptic_rank.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "lean_templates/rigorous_bsd.lean"
+        "lean_templates/rigorous_bsd.lean",
+        "scripts/milenio_mapa.py"
       ]
     },
     "poincare": {
-      "file_count": 25,
+      "file_count": 20,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -146,7 +136,6 @@
         "docs/milenio_cadena.json",
         "docs/milenio_red.json",
         "docs/millennium_dossier_resumen.txt",
-        "lean_templates/HeptalogoDeepExtension.lean",
         "lean_templates/HeptalogoMain.lean",
         "lean_templates/HomotopyMini.lean",
         "lean_templates/MillenniumHeptad.lean",
@@ -154,14 +143,10 @@
         "lean_templates/hodge.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "lean_templates/navier_stokes.lean",
         "lean_templates/poincare.lean",
         "lean_templates/poincare_conjecture.lean",
         "lean_templates/poincare_euler_characteristic.lean",
-        "lean_templates/rigorous_hodge.lean",
-        "lean_templates/rigorous_navier_stokes_advanced.lean",
         "lean_templates/rigorous_poincare.lean",
-        "lean_templates/yang_mills.lean",
         "scripts/milenio_mapa.py"
       ]
     }
@@ -171,18 +156,14 @@
       "path": "README.md",
       "ext": ".md",
       "size_bytes": 3102,
-      "problems": [
-        "riemann"
-      ],
-      "hit_counts": {
-        "riemann": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5081,
+      "size_bytes": 5080,
       "problems": [
         "riemann",
         "yang_mills",
@@ -200,7 +181,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3392,
+      "size_bytes": 3391,
       "problems": [
         "riemann",
         "yang_mills",
@@ -218,13 +199,9 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6439,
-      "problems": [
-        "navier_stokes"
-      ],
-      "hit_counts": {
-        "navier_stokes": 1
-      },
+      "size_bytes": 6422,
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -241,7 +218,6 @@
       "size_bytes": 838,
       "problems": [
         "riemann",
-        "p_vs_np",
         "navier_stokes",
         "yang_mills",
         "hodge",
@@ -250,7 +226,6 @@
       ],
       "hit_counts": {
         "riemann": 1,
-        "p_vs_np": 1,
         "navier_stokes": 2,
         "yang_mills": 2,
         "hodge": 2,
@@ -316,7 +291,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 7725,
+      "size_bytes": 6828,
       "problems": [
         "riemann",
         "yang_mills",
@@ -324,9 +299,9 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 17,
+        "riemann": 14,
         "yang_mills": 21,
-        "hodge": 22,
+        "hodge": 19,
         "poincare": 22
       },
       "lean_markers": 0
@@ -378,7 +353,7 @@
     {
       "path": "docs/verificacion_numerica.json",
       "ext": ".json",
-      "size_bytes": 1083,
+      "size_bytes": 1082,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -423,24 +398,16 @@
       "path": "lean_templates/ConstructiveTuring.lean",
       "ext": ".lean",
       "size_bytes": 2867,
-      "problems": [
-        "p_vs_np"
-      ],
-      "hit_counts": {
-        "p_vs_np": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
       "path": "lean_templates/ConstructiveWitnesses.lean",
       "ext": ".lean",
       "size_bytes": 650,
-      "problems": [
-        "p_vs_np"
-      ],
-      "hit_counts": {
-        "p_vs_np": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -455,12 +422,8 @@
       "path": "lean_templates/GraphMini.lean",
       "ext": ".lean",
       "size_bytes": 906,
-      "problems": [
-        "p_vs_np"
-      ],
-      "hit_counts": {
-        "p_vs_np": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -469,13 +432,11 @@
       "size_bytes": 1231,
       "problems": [
         "yang_mills",
-        "birch_swinnerton_dyer",
-        "poincare"
+        "birch_swinnerton_dyer"
       ],
       "hit_counts": {
         "yang_mills": 4,
-        "birch_swinnerton_dyer": 5,
-        "poincare": 1
+        "birch_swinnerton_dyer": 5
       },
       "lean_markers": 0
     },
@@ -589,12 +550,8 @@
       "path": "lean_templates/ReductionMini.lean",
       "ext": ".lean",
       "size_bytes": 1008,
-      "problems": [
-        "p_vs_np"
-      ],
-      "hit_counts": {
-        "p_vs_np": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -658,11 +615,9 @@
       "ext": ".lean",
       "size_bytes": 1028,
       "problems": [
-        "p_vs_np",
         "yang_mills"
       ],
       "hit_counts": {
-        "p_vs_np": 1,
         "yang_mills": 1
       },
       "lean_markers": 0
@@ -737,7 +692,6 @@
       "size_bytes": 4212,
       "problems": [
         "riemann",
-        "p_vs_np",
         "navier_stokes",
         "yang_mills",
         "hodge",
@@ -746,7 +700,6 @@
       ],
       "hit_counts": {
         "riemann": 1,
-        "p_vs_np": 1,
         "navier_stokes": 2,
         "yang_mills": 5,
         "hodge": 9,
@@ -761,7 +714,6 @@
       "size_bytes": 1890,
       "problems": [
         "riemann",
-        "p_vs_np",
         "navier_stokes",
         "yang_mills",
         "hodge",
@@ -770,7 +722,6 @@
       ],
       "hit_counts": {
         "riemann": 1,
-        "p_vs_np": 1,
         "navier_stokes": 2,
         "yang_mills": 2,
         "hodge": 1,
@@ -784,12 +735,10 @@
       "ext": ".lean",
       "size_bytes": 1076,
       "problems": [
-        "navier_stokes",
-        "poincare"
+        "navier_stokes"
       ],
       "hit_counts": {
-        "navier_stokes": 2,
-        "poincare": 1
+        "navier_stokes": 2
       },
       "lean_markers": 0
     },
@@ -829,12 +778,8 @@
       "path": "lean_templates/p_vs_np_complexity.lean",
       "ext": ".lean",
       "size_bytes": 185,
-      "problems": [
-        "p_vs_np"
-      ],
-      "hit_counts": {
-        "p_vs_np": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -914,12 +859,10 @@
       "ext": ".lean",
       "size_bytes": 809,
       "problems": [
-        "hodge",
-        "poincare"
+        "hodge"
       ],
       "hit_counts": {
-        "hodge": 3,
-        "poincare": 1
+        "hodge": 3
       },
       "lean_markers": 1
     },
@@ -940,12 +883,10 @@
       "ext": ".lean",
       "size_bytes": 931,
       "problems": [
-        "navier_stokes",
-        "poincare"
+        "navier_stokes"
       ],
       "hit_counts": {
-        "navier_stokes": 2,
-        "poincare": 1
+        "navier_stokes": 2
       },
       "lean_markers": 0
     },
@@ -1002,12 +943,10 @@
       "ext": ".lean",
       "size_bytes": 919,
       "problems": [
-        "yang_mills",
-        "poincare"
+        "yang_mills"
       ],
       "hit_counts": {
-        "yang_mills": 2,
-        "poincare": 1
+        "yang_mills": 2
       },
       "lean_markers": 0
     },
@@ -1087,12 +1026,8 @@
       "path": "scripts/generar_cronica_movil.py",
       "ext": ".py",
       "size_bytes": 8705,
-      "problems": [
-        "navier_stokes"
-      ],
-      "hit_counts": {
-        "navier_stokes": 1
-      },
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     },
     {
@@ -1114,17 +1049,21 @@
     {
       "path": "scripts/milenio_mapa.py",
       "ext": ".py",
-      "size_bytes": 5087,
+      "size_bytes": 5527,
       "problems": [
         "riemann",
+        "navier_stokes",
         "yang_mills",
         "hodge",
+        "birch_swinnerton_dyer",
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 1,
+        "riemann": 3,
+        "navier_stokes": 2,
         "yang_mills": 1,
-        "hodge": 2,
+        "hodge": 3,
+        "birch_swinnerton_dyer": 1,
         "poincare": 1
       },
       "lean_markers": 0

@@ -2,22 +2,8 @@
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
   "total_files": 81,
-  "bridge_file_count": 22,
+  "bridge_file_count": 17,
   "bridge_files": [
-    {
-      "path": "docs/HEPTALOGO_MANIFEST.md",
-      "problem_count": 7,
-      "problems": [
-        "riemann",
-        "p_vs_np",
-        "navier_stokes",
-        "yang_mills",
-        "hodge",
-        "birch_swinnerton_dyer",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
     {
       "path": "docs/millennium_dossier_resumen.txt",
       "problem_count": 7,
@@ -33,11 +19,23 @@
       "lean_markers": 0
     },
     {
-      "path": "lean_templates/millennium_absolute_resolution.lean",
-      "problem_count": 7,
+      "path": "docs/HEPTALOGO_MANIFEST.md",
+      "problem_count": 6,
       "problems": [
         "riemann",
-        "p_vs_np",
+        "navier_stokes",
+        "yang_mills",
+        "hodge",
+        "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": "lean_templates/millennium_absolute_resolution.lean",
+      "problem_count": 6,
+      "problems": [
+        "riemann",
         "navier_stokes",
         "yang_mills",
         "hodge",
@@ -48,10 +46,22 @@
     },
     {
       "path": "lean_templates/millennium_master_unified.lean",
-      "problem_count": 7,
+      "problem_count": 6,
       "problems": [
         "riemann",
-        "p_vs_np",
+        "navier_stokes",
+        "yang_mills",
+        "hodge",
+        "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": "scripts/milenio_mapa.py",
+      "problem_count": 6,
+      "problems": [
+        "riemann",
         "navier_stokes",
         "yang_mills",
         "hodge",
@@ -162,27 +172,6 @@
       "lean_markers": 0
     },
     {
-      "path": "scripts/milenio_mapa.py",
-      "problem_count": 4,
-      "problems": [
-        "riemann",
-        "yang_mills",
-        "hodge",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/HeptalogoDeepExtension.lean",
-      "problem_count": 3,
-      "problems": [
-        "yang_mills",
-        "birch_swinnerton_dyer",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
       "path": "lean_templates/espectro_unificado_milenioum.lean",
       "problem_count": 3,
       "problems": [
@@ -203,47 +192,11 @@
       "lean_markers": 0
     },
     {
-      "path": "lean_templates/constructive_witnesses.lean",
-      "problem_count": 2,
-      "problems": [
-        "p_vs_np",
-        "yang_mills"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/navier_stokes.lean",
-      "problem_count": 2,
-      "problems": [
-        "navier_stokes",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/rigorous_hodge.lean",
-      "problem_count": 2,
-      "problems": [
-        "hodge",
-        "poincare"
-      ],
-      "lean_markers": 1
-    },
-    {
-      "path": "lean_templates/rigorous_navier_stokes_advanced.lean",
-      "problem_count": 2,
-      "problems": [
-        "navier_stokes",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "lean_templates/yang_mills.lean",
+      "path": "lean_templates/HeptalogoDeepExtension.lean",
       "problem_count": 2,
       "problems": [
         "yang_mills",
-        "poincare"
+        "birch_swinnerton_dyer"
       ],
       "lean_markers": 0
     }
@@ -255,16 +208,16 @@
     "yang_mills": 1,
     "hodge": 1,
     "birch_swinnerton_dyer": 1,
-    "poincare": 2
+    "poincare": 1
   },
   "problem_file_counts": {
-    "riemann": 21,
-    "p_vs_np": 17,
-    "navier_stokes": 11,
+    "riemann": 20,
+    "p_vs_np": 8,
+    "navier_stokes": 10,
     "yang_mills": 21,
     "hodge": 18,
-    "birch_swinnerton_dyer": 15,
-    "poincare": 25
+    "birch_swinnerton_dyer": 16,
+    "poincare": 20
   },
   "verifiers_status": {
     "verify_zeros": "ok",
@@ -280,7 +233,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 13.163,
+        "elapsed_seconds": 15.6585,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -296,7 +249,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 11.5367
+        "elapsed_seconds": 13.3069
       }
     },
     "parallel_verify": {
@@ -307,7 +260,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.3885,
+        "elapsed_seconds": 9.0949,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
