@@ -1,6 +1,6 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 78,
+  "total_scanned_files": 80,
   "problems_summary": {
     "riemann": {
       "file_count": 23,
@@ -186,7 +186,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5080,
+      "size_bytes": 5081,
       "problems": [
         "riemann",
         "yang_mills",
@@ -204,7 +204,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3391,
+      "size_bytes": 3392,
       "problems": [
         "riemann",
         "yang_mills",
@@ -222,7 +222,7 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6276,
+      "size_bytes": 6332,
       "problems": [
         "navier_stokes",
         "hodge"
@@ -278,7 +278,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5284,
+      "size_bytes": 5429,
       "problems": [
         "riemann",
         "yang_mills",
@@ -304,9 +304,17 @@
       "lean_markers": 0
     },
     {
+      "path": "docs/benchmark_movil.json",
+      "ext": ".json",
+      "size_bytes": 1400,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 7193,
+      "size_bytes": 7558,
       "problems": [
         "riemann",
         "yang_mills",
@@ -316,7 +324,7 @@
       "hit_counts": {
         "riemann": 16,
         "yang_mills": 21,
-        "hodge": 19,
+        "hodge": 21,
         "poincare": 22
       },
       "lean_markers": 0
@@ -324,7 +332,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 26847,
+      "size_bytes": 27580,
       "problems": [
         "riemann",
         "yang_mills",
@@ -335,7 +343,7 @@
       "hit_counts": {
         "riemann": 47,
         "yang_mills": 46,
-        "hodge": 41,
+        "hodge": 45,
         "birch_swinnerton_dyer": 2,
         "poincare": 53
       },
@@ -1049,6 +1057,14 @@
       "path": "scripts/analizar_estructura.py",
       "ext": ".py",
       "size_bytes": 7492,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "scripts/benchmark_movil.py",
+      "ext": ".py",
+      "size_bytes": 3169,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
