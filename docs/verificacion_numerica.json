@@ -9,7 +9,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 16.4479,
+        "elapsed_seconds": 16.5115,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -25,7 +25,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 14.3662
+        "elapsed_seconds": 14.3828
       }
     },
     "parallel_verify": {
@@ -36,7 +36,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.5634,
+        "elapsed_seconds": 9.6287,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

@@ -1,6 +1,6 @@
 # Crónica y Estado del Laboratorio — 100 % Construido en Móvil
 
-- **Generado:** `2026-11-22 19:44:51 UTC`
+- **Generado:** `2026-11-22 19:46:45 UTC`
 - **Entorno de trabajo:** Móvil / Termux (sin ordenador de escritorio ni portátil)
 - **Archivos escaneados en la red:** **80**
 - **Nodos puente entre problemas:** **26**
@@ -61,7 +61,7 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5081 B)
 - `docs/CADENA_MILENIO.md` (42 líneas, 3392 B)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md` (100 líneas, 6438 B)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md` (100 líneas, 6415 B)
 - `docs/HEPTALOGO_MANIFEST.md` (14 líneas, 838 B)
 - `docs/HEPTALOGO_REPORT.md` (56 líneas, 3767 B)
 - `docs/RED_MILENIO.md` (151 líneas, 5429 B)
@@ -76,14 +76,15 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 ## 3. Estado de verificación numérica
 
 - **`verify_zeros`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 16.4479, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 16.5115, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 - **`turing_certify`:** `ok`
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 14.3662}`
+  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 14.3828}`
 - **`parallel_verify`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.5634, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.6287, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Cómo se llegó hasta aquí (historial reciente)
 
+- `b3993ff | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
 - `ae8daa2 | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
 - `b2b1b4b | 2026-11-22 | feat(bench): add controlled mobile benchmark script and baseline results`
 - `6c3be7d | 2026-11-22 | feat(chronicle): add mobile build chronicle generator and hook into pipeline`
@@ -91,7 +92,6 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 - `3bfd783 | 2026-11-22 | feat(chain): increase verifier timeout to 60s and include structure analysis in pipeline`
 - `f82d5c3 | 2026-11-22 | feat(chain): integrate verify_zeros, turing_certify, and parallel_verify metrics`
 - `22b75df | 2026-11-22 | feat(chain): add millennium network mapper, bridge weaver, and auto push script`
-- `6c0bfbe | 2026-11-21 | docs(readme): add practical CLI usage examples for scripts`
 
 ## 5. Siguientes pasos naturales del laboratorio
 

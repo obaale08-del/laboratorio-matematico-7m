@@ -5,11 +5,11 @@ Archivos puente (conectan 2 o más problemas): **26**
 ## Verificaciones numéricas y certificación
 
 - `verify_zeros` (`scripts/verify_zeros.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 16.4479, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 16.5115, "anomalies": []}`
 - `turing_certify` (`scripts/turing_certify.py`): **ok**
   - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50}`
 - `parallel_verify` (`scripts/parallel_verify.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.5634, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.6287, "anomalies": []}`
 
 ## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea
 
