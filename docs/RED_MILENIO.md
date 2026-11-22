@@ -1,6 +1,6 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **76**
+Archivos escaneados: **78**
 
 ## Cobertura por problema
 
@@ -48,7 +48,8 @@ Archivos escaneados: **76**
 - `lean_templates/p_vs_np_complexity.lean`
 - `lean_templates/rigorous_p_vs_np.lean`
 
-### `navier_stokes` (9 archivos)
+### `navier_stokes` (11 archivos)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/espectro_unificado_milenioum.lean`
@@ -58,6 +59,7 @@ Archivos escaneados: **76**
 - `lean_templates/navier_stokes_bound.lean`
 - `lean_templates/rigorous_navier_stokes.lean`
 - `lean_templates/rigorous_navier_stokes_advanced.lean`
+- `scripts/generar_cronica_movil.py`
 
 ### `yang_mills` (21 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
@@ -82,9 +84,10 @@ Archivos escaneados: **76**
 - `lean_templates/yang_mills_mass_gap_positivity.lean`
 - `scripts/milenio_mapa.py`
 
-### `hodge` (18 archivos)
+### `hodge` (20 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
+- `docs/CRONICA_Y_ESTADO_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
 - `docs/RED_MILENIO.md`
@@ -100,6 +103,7 @@ Archivos escaneados: **76**
 - `lean_templates/millennium_absolute_resolution.lean`
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_hodge.lean`
+- `scripts/generar_cronica_movil.py`
 - `scripts/milenio_mapa.py`
 
 ### `birch_swinnerton_dyer` (15 archivos)

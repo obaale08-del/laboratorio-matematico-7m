@@ -27,6 +27,7 @@ def weave_and_push(
         ("tejer_red", "scripts/tejer_red.py", ["--json"]),
         ("lean_auditor", "scripts/lean_auditor.py", ["--no-log", "--json"]),
         ("analizar_estructura", "scripts/analizar_estructura.py", ["--json"]),
+        ("generar_cronica_movil", "scripts/generar_cronica_movil.py", ["--json"]),
     ]:
         proc = _run_cmd([sys.executable, str(REPO_ROOT / script_rel), *extra_args])
         steps[name] = {

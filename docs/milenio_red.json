@@ -1,6 +1,6 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 76,
+  "total_scanned_files": 78,
   "problems_summary": {
     "riemann": {
       "file_count": 23,
@@ -53,8 +53,9 @@
       ]
     },
     "navier_stokes": {
-      "file_count": 9,
+      "file_count": 11,
       "files": [
+        "docs/CRONICA_Y_ESTADO_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/espectro_unificado_milenioum.lean",
@@ -63,7 +64,8 @@
         "lean_templates/navier_stokes.lean",
         "lean_templates/navier_stokes_bound.lean",
         "lean_templates/rigorous_navier_stokes.lean",
-        "lean_templates/rigorous_navier_stokes_advanced.lean"
+        "lean_templates/rigorous_navier_stokes_advanced.lean",
+        "scripts/generar_cronica_movil.py"
       ]
     },
     "yang_mills": {
@@ -93,10 +95,11 @@
       ]
     },
     "hodge": {
-      "file_count": 18,
+      "file_count": 20,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
+        "docs/CRONICA_Y_ESTADO_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
         "docs/RED_MILENIO.md",
@@ -112,6 +115,7 @@
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
         "lean_templates/rigorous_hodge.lean",
+        "scripts/generar_cronica_movil.py",
         "scripts/milenio_mapa.py"
       ]
     },
@@ -182,7 +186,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4864,
+      "size_bytes": 5080,
       "problems": [
         "riemann",
         "yang_mills",
@@ -200,7 +204,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3237,
+      "size_bytes": 3391,
       "problems": [
         "riemann",
         "yang_mills",
@@ -212,6 +216,20 @@
         "yang_mills": 16,
         "hodge": 15,
         "poincare": 16
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
+      "ext": ".md",
+      "size_bytes": 6276,
+      "problems": [
+        "navier_stokes",
+        "hodge"
+      ],
+      "hit_counts": {
+        "navier_stokes": 1,
+        "hodge": 1
       },
       "lean_markers": 0
     },
@@ -306,7 +324,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 26685,
+      "size_bytes": 26847,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1052,6 +1070,20 @@
       "lean_markers": 0
     },
     {
+      "path": "scripts/generar_cronica_movil.py",
+      "ext": ".py",
+      "size_bytes": 8705,
+      "problems": [
+        "navier_stokes",
+        "hodge"
+      ],
+      "hit_counts": {
+        "navier_stokes": 1,
+        "hodge": 1
+      },
+      "lean_markers": 0
+    },
+    {
       "path": "scripts/lean_auditor.py",
       "ext": ".py",
       "size_bytes": 4610,
@@ -1108,7 +1140,7 @@
     {
       "path": "scripts/tejer_y_subir.py",
       "ext": ".py",
-      "size_bytes": 4170,
+      "size_bytes": 4253,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0

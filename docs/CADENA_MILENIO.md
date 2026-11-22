@@ -1,15 +1,15 @@
 # Cadena y Nodos Puente — 7 Problemas del Milenio
 
-Archivos puente (conectan 2 o más problemas): **24**
+Archivos puente (conectan 2 o más problemas): **26**
 
 ## Verificaciones numéricas y certificación
 
 - `verify_zeros` (`scripts/verify_zeros.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 14.8247, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 11.4843, "anomalies": []}`
 - `turing_certify` (`scripts/turing_certify.py`): **ok**
   - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50}`
 - `parallel_verify` (`scripts/parallel_verify.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.5057, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.0833, "anomalies": []}`
 
 ## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea
 
@@ -17,9 +17,9 @@ Archivos puente (conectan 2 o más problemas): **24**
 
 - `riemann`: **23** archivos | **1** marcadores Lean
 - `p_vs_np`: **17** archivos | **1** marcadores Lean
-- `navier_stokes`: **9** archivos | **1** marcadores Lean
+- `navier_stokes`: **11** archivos | **1** marcadores Lean
 - `yang_mills`: **21** archivos | **1** marcadores Lean
-- `hodge`: **18** archivos | **1** marcadores Lean
+- `hodge`: **20** archivos | **1** marcadores Lean
 - `birch_swinnerton_dyer`: **15** archivos | **1** marcadores Lean
 - `poincare`: **25** archivos | **2** marcadores Lean
 
