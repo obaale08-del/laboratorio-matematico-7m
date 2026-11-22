@@ -1,6 +1,6 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 75,
+  "total_scanned_files": 76,
   "problems_summary": {
     "riemann": {
       "file_count": 23,
@@ -182,7 +182,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4709,
+      "size_bytes": 4864,
       "problems": [
         "riemann",
         "yang_mills",
@@ -200,7 +200,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3246,
+      "size_bytes": 3237,
       "problems": [
         "riemann",
         "yang_mills",
@@ -210,8 +210,8 @@
       "hit_counts": {
         "riemann": 11,
         "yang_mills": 16,
-        "hodge": 14,
-        "poincare": 15
+        "hodge": 15,
+        "poincare": 16
       },
       "lean_markers": 0
     },
@@ -260,7 +260,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5124,
+      "size_bytes": 5284,
       "problems": [
         "riemann",
         "yang_mills",
@@ -288,7 +288,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 6970,
+      "size_bytes": 7193,
       "problems": [
         "riemann",
         "yang_mills",
@@ -296,17 +296,17 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 15,
-        "yang_mills": 20,
-        "hodge": 18,
-        "poincare": 21
+        "riemann": 16,
+        "yang_mills": 21,
+        "hodge": 19,
+        "poincare": 22
       },
       "lean_markers": 0
     },
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 25958,
+      "size_bytes": 26685,
       "problems": [
         "riemann",
         "yang_mills",
@@ -315,11 +315,11 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 45,
-        "yang_mills": 44,
-        "hodge": 39,
+        "riemann": 47,
+        "yang_mills": 46,
+        "hodge": 41,
         "birch_swinnerton_dyer": 2,
-        "poincare": 51
+        "poincare": 53
       },
       "lean_markers": 0
     },
@@ -350,7 +350,7 @@
     {
       "path": "docs/verificacion_numerica.json",
       "ext": ".json",
-      "size_bytes": 1082,
+      "size_bytes": 1083,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -1012,6 +1012,14 @@
       "lean_markers": 0
     },
     {
+      "path": "requirements.txt",
+      "ext": ".txt",
+      "size_bytes": 89,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
       "path": "scripts/analizador.py",
       "ext": ".py",
       "size_bytes": 4151,
@@ -1022,7 +1030,7 @@
     {
       "path": "scripts/analizar_estructura.py",
       "ext": ".py",
-      "size_bytes": 7223,
+      "size_bytes": 7492,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -1092,7 +1100,7 @@
     {
       "path": "scripts/tejer_red.py",
       "ext": ".py",
-      "size_bytes": 8771,
+      "size_bytes": 8955,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0

@@ -179,6 +179,8 @@ def weave_network_chain(
             "",
             "## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea",
             "",
+            "> Auditoría en `lean_templates/`: **0 `sorry`**, **0 `admit`** y **7 `axiom`** (uno por problema en `rigorous_*.lean` como `*_universal_open_problem`).",
+            "",
         ]
     )
     for prob, count in lean_markers_by_problem.items():

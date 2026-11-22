@@ -1,7 +1,7 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 75,
+  "total_files": 76,
   "bridge_file_count": 24,
   "bridge_files": [
     {
@@ -298,7 +298,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 14.7962,
+        "elapsed_seconds": 14.8247,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -314,7 +314,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 13.2174
+        "elapsed_seconds": 10.2445
       }
     },
     "parallel_verify": {
@@ -325,7 +325,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 8.6207,
+        "elapsed_seconds": 7.5057,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

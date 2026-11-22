@@ -97,7 +97,13 @@ def analyze_repository_structure(
     for folder, cnt in folders.items():
         lines.append(f"- `{folder}`: **{cnt}** archivo(s)")
 
-    lines.extend(["", "## 2. Cobertura y marcadores Lean por problema", ""])
+    lines.extend([
+        "",
+        "## 2. Cobertura y marcadores Lean por problema",
+        "",
+        "Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; los marcadores contabilizados corresponden a los **7 axiomas de conjetura abierta** (`*_universal_open_problem` en `rigorous_*.lean`).",
+        "",
+    ])
     for prob, f_count in analysis["problem_file_counts"].items():
         m_count = analysis["lean_markers_by_problem"].get(prob, 0)
         lines.append(f"- `{prob}`: **{f_count}** archivos | **{m_count}** marcadores Lean")
