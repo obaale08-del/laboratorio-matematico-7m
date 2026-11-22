@@ -186,7 +186,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5081,
+      "size_bytes": 5082,
       "problems": [
         "riemann",
         "yang_mills",
@@ -204,7 +204,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3392,
+      "size_bytes": 3393,
       "problems": [
         "riemann",
         "yang_mills",
@@ -222,7 +222,7 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6442,
+      "size_bytes": 6438,
       "problems": [
         "navier_stokes",
         "hodge"
@@ -314,7 +314,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 7558,
+      "size_bytes": 7559,
       "problems": [
         "riemann",
         "yang_mills",
@@ -376,7 +376,7 @@
     {
       "path": "docs/verificacion_numerica.json",
       "ext": ".json",
-      "size_bytes": 1083,
+      "size_bytes": 1084,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
