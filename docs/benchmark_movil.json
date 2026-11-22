@@ -1,5 +1,5 @@
 {
-  "generated_at_epoch": 1795376327.84,
+  "generated_at_epoch": 1795377006.21,
   "tier": "high",
   "timeout_per_case_s": 90,
   "cases": {
@@ -7,24 +7,24 @@
       "cmd": "scripts/verify_zeros.py --start 1 --count 220 --dps 30 --json",
       "returncode": 0,
       "status": "ok",
-      "wall_seconds": 44.5763,
-      "output": "{\n  \"start_index\": 1,\n  \"count\": 220,\n  \"dps\": 30,\n  \"tolerance\": \"1.0e-24\",\n  \"elapsed_seconds\": 44.4437,\n  \"anomalies\": [],\n  \"errors\": [],\n  \"all_within_tolerance\": true\n}",
+      "wall_seconds": 54.6225,
+      "output": "{\n  \"start_index\": 1,\n  \"count\": 220,\n  \"dps\": 30,\n  \"tolerance\": \"1.0e-24\",\n  \"elapsed_seconds\": 54.5114,\n  \"anomalies\": [],\n  \"errors\": [],\n  \"all_within_tolerance\": true\n}",
       "stderr_tail": ""
     },
     "parallel_verify_450_w8": {
       "cmd": "scripts/parallel_verify.py --start 1 --count 450 --dps 30 --workers 8 --json",
       "returncode": 0,
       "status": "ok",
-      "wall_seconds": 26.9031,
-      "output": "{\n  \"start_index\": 1,\n  \"count\": 450,\n  \"dps\": 30,\n  \"workers\": 8,\n  \"elapsed_seconds\": 26.739,\n  \"anomalies\": [],\n  \"errors\": [],\n  \"all_within_tolerance\": true\n}",
+      "wall_seconds": 27.4418,
+      "output": "{\n  \"start_index\": 1,\n  \"count\": 450,\n  \"dps\": 30,\n  \"workers\": 8,\n  \"elapsed_seconds\": 27.277,\n  \"anomalies\": [],\n  \"errors\": [],\n  \"all_within_tolerance\": true\n}",
       "stderr_tail": ""
     },
     "turing_100_300_step005": {
       "cmd": "scripts/turing_certify.py --t-start 100.0 --t-end 300.0 --step 0.05 --dps 15 --json",
       "returncode": 0,
       "status": "ok",
-      "wall_seconds": 33.0187,
-      "output": "{\n  \"t_start\": 100.0,\n  \"t_end\": 300.0,\n  \"step\": 0.05,\n  \"dps\": 15,\n  \"intervals_checked\": 4000,\n  \"sign_changes_detected\": 109,\n  \"elapsed_seconds\": 32.8884\n}",
+      "wall_seconds": 32.9987,
+      "output": "{\n  \"t_start\": 100.0,\n  \"t_end\": 300.0,\n  \"step\": 0.05,\n  \"dps\": 15,\n  \"intervals_checked\": 4000,\n  \"sign_changes_detected\": 109,\n  \"elapsed_seconds\": 32.8678\n}",
       "stderr_tail": ""
     }
   }

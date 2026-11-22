@@ -1,25 +1,25 @@
 # Cadena y Nodos Puente — 7 Problemas del Milenio
 
-Archivos puente (conectan 2 o más problemas): **26**
+Archivos puente (conectan 2 o más problemas): **27**
 
 ## Verificaciones numéricas y certificación
 
 - `verify_zeros` (`scripts/verify_zeros.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 16.5115, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 13.6714, "anomalies": []}`
 - `turing_certify` (`scripts/turing_certify.py`): **ok**
   - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50}`
 - `parallel_verify` (`scripts/parallel_verify.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.6287, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.4536, "anomalies": []}`
 
 ## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea
 
 > Auditoría en `lean_templates/`: **0 `sorry`**, **0 `admit`** y **7 `axiom`** (uno por problema en `rigorous_*.lean` como `*_universal_open_problem`).
 
-- `riemann`: **23** archivos | **1** marcadores Lean
+- `riemann`: **24** archivos | **1** marcadores Lean
 - `p_vs_np`: **17** archivos | **1** marcadores Lean
 - `navier_stokes`: **11** archivos | **1** marcadores Lean
 - `yang_mills`: **21** archivos | **1** marcadores Lean
-- `hodge`: **20** archivos | **1** marcadores Lean
+- `hodge`: **21** archivos | **1** marcadores Lean
 - `birch_swinnerton_dyer`: **15** archivos | **1** marcadores Lean
 - `poincare`: **25** archivos | **2** marcadores Lean
 

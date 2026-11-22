@@ -1,13 +1,14 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 80,
+  "total_scanned_files": 81,
   "problems_summary": {
     "riemann": {
-      "file_count": 23,
+      "file_count": 24,
       "files": [
         "README.md",
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
+        "docs/GUIA_CLI_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/RED_MILENIO.md",
         "docs/milenio_cadena.json",
@@ -95,11 +96,12 @@
       ]
     },
     "hodge": {
-      "file_count": 20,
+      "file_count": 21,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/CRONICA_Y_ESTADO_MOVIL.md",
+        "docs/GUIA_CLI_MOVIL.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
         "docs/RED_MILENIO.md",
@@ -222,13 +224,27 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6415,
+      "size_bytes": 6430,
       "problems": [
         "navier_stokes",
         "hodge"
       ],
       "hit_counts": {
         "navier_stokes": 1,
+        "hodge": 1
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/GUIA_CLI_MOVIL.md",
+      "ext": ".md",
+      "size_bytes": 1867,
+      "problems": [
+        "riemann",
+        "hodge"
+      ],
+      "hit_counts": {
+        "riemann": 1,
         "hodge": 1
       },
       "lean_markers": 0

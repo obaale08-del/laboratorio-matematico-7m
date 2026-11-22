@@ -1,8 +1,8 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 80,
-  "bridge_file_count": 26,
+  "total_files": 81,
+  "bridge_file_count": 27,
   "bridge_files": [
     {
       "path": "docs/HEPTALOGO_MANIFEST.md",
@@ -212,6 +212,15 @@
       "lean_markers": 0
     },
     {
+      "path": "docs/GUIA_CLI_MOVIL.md",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "hodge"
+      ],
+      "lean_markers": 0
+    },
+    {
       "path": "lean_templates/ConstructiveTuring.lean",
       "problem_count": 2,
       "problems": [
@@ -294,11 +303,11 @@
     "poincare": 2
   },
   "problem_file_counts": {
-    "riemann": 23,
+    "riemann": 24,
     "p_vs_np": 17,
     "navier_stokes": 11,
     "yang_mills": 21,
-    "hodge": 20,
+    "hodge": 21,
     "birch_swinnerton_dyer": 15,
     "poincare": 25
   },
@@ -316,7 +325,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 16.5115,
+        "elapsed_seconds": 13.6714,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -332,7 +341,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 14.3828
+        "elapsed_seconds": 14.2125
       }
     },
     "parallel_verify": {
@@ -343,7 +352,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.6287,
+        "elapsed_seconds": 9.4536,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

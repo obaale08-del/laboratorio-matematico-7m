@@ -1,13 +1,14 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **80**
+Archivos escaneados: **81**
 
 ## Cobertura por problema
 
-### `riemann` (23 archivos)
+### `riemann` (24 archivos)
 - `README.md`
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
+- `docs/GUIA_CLI_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/RED_MILENIO.md`
 - `docs/milenio_cadena.json`
@@ -84,10 +85,11 @@ Archivos escaneados: **80**
 - `lean_templates/yang_mills_mass_gap_positivity.lean`
 - `scripts/milenio_mapa.py`
 
-### `hodge` (20 archivos)
+### `hodge` (21 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/CRONICA_Y_ESTADO_MOVIL.md`
+- `docs/GUIA_CLI_MOVIL.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
 - `docs/RED_MILENIO.md`
