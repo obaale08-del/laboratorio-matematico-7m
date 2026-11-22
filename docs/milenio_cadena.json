@@ -1,8 +1,8 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 73,
-  "bridge_file_count": 23,
+  "total_files": 75,
+  "bridge_file_count": 24,
   "bridge_files": [
     {
       "path": "docs/HEPTALOGO_MANIFEST.md",
@@ -80,6 +80,17 @@
         "yang_mills",
         "hodge",
         "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
+      "problem_count": 4,
+      "problems": [
+        "riemann",
+        "yang_mills",
+        "hodge",
         "poincare"
       ],
       "lean_markers": 0
@@ -265,17 +276,17 @@
     "poincare": 2
   },
   "problem_file_counts": {
-    "riemann": 22,
+    "riemann": 23,
     "p_vs_np": 17,
     "navier_stokes": 9,
-    "yang_mills": 20,
-    "hodge": 17,
+    "yang_mills": 21,
+    "hodge": 18,
     "birch_swinnerton_dyer": 15,
-    "poincare": 24
+    "poincare": 25
   },
   "verifiers_status": {
     "verify_zeros": "ok",
-    "turing_certify": "timeout",
+    "turing_certify": "ok",
     "parallel_verify": "ok"
   },
   "verifiers": {
@@ -287,16 +298,24 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 15.0874,
+        "elapsed_seconds": 14.7962,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
       }
     },
     "turing_certify": {
-      "status": "timeout",
+      "status": "ok",
       "script": "scripts/turing_certify.py",
-      "timeout_s": 25
+      "data": {
+        "t_start": 100.0,
+        "t_end": 200.0,
+        "step": 0.05,
+        "dps": 15,
+        "intervals_checked": 2000,
+        "sign_changes_detected": 50,
+        "elapsed_seconds": 13.2174
+      }
     },
     "parallel_verify": {
       "status": "ok",
@@ -306,7 +325,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 6.0594,
+        "elapsed_seconds": 8.6207,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

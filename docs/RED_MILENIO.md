@@ -1,11 +1,12 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **73**
+Archivos escaneados: **75**
 
 ## Cobertura por problema
 
-### `riemann` (22 archivos)
+### `riemann` (23 archivos)
 - `README.md`
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/RED_MILENIO.md`
@@ -58,7 +59,8 @@ Archivos escaneados: **73**
 - `lean_templates/rigorous_navier_stokes.lean`
 - `lean_templates/rigorous_navier_stokes_advanced.lean`
 
-### `yang_mills` (20 archivos)
+### `yang_mills` (21 archivos)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
@@ -80,7 +82,8 @@ Archivos escaneados: **73**
 - `lean_templates/yang_mills_mass_gap_positivity.lean`
 - `scripts/milenio_mapa.py`
 
-### `hodge` (17 archivos)
+### `hodge` (18 archivos)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
@@ -116,7 +119,8 @@ Archivos escaneados: **73**
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_bsd.lean`
 
-### `poincare` (24 archivos)
+### `poincare` (25 archivos)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`

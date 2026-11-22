@@ -26,6 +26,7 @@ def weave_and_push(
         ("milenio_mapa", "scripts/milenio_mapa.py", ["--json"]),
         ("tejer_red", "scripts/tejer_red.py", ["--json"]),
         ("lean_auditor", "scripts/lean_auditor.py", ["--no-log", "--json"]),
+        ("analizar_estructura", "scripts/analizar_estructura.py", ["--json"]),
     ]:
         proc = _run_cmd([sys.executable, str(REPO_ROOT / script_rel), *extra_args])
         steps[name] = {

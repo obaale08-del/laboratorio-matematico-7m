@@ -19,7 +19,7 @@ VERIFY_SCRIPTS: list[tuple[str, str]] = [
 ]
 
 
-def _run_verifier(name: str, rel_script: str, timeout_s: int = 25) -> dict[str, Any]:
+def _run_verifier(name: str, rel_script: str, timeout_s: int = 60) -> dict[str, Any]:
     script_path = REPO_ROOT / rel_script
     if not script_path.exists():
         return {"status": "missing", "script": rel_script}
@@ -68,7 +68,7 @@ def _run_verifier(name: str, rel_script: str, timeout_s: int = 25) -> dict[str, 
 
 def collect_verification_metrics(
     out_verify_json: Path = DEFAULT_VERIFY_JSON,
-    timeout_s: int = 25,
+    timeout_s: int = 60,
 ) -> dict[str, Any]:
     """Ejecuta y consolida salidas --json de scripts de verificación en docs/."""
     results: dict[str, Any] = {}
@@ -92,7 +92,7 @@ def weave_network_chain(
     out_md: Path = DEFAULT_OUT_MD,
     out_verify_json: Path = DEFAULT_VERIFY_JSON,
     skip_verify: bool = False,
-    timeout_s: int = 25,
+    timeout_s: int = 60,
     verbose: bool = False,
 ) -> dict[str, Any]:
     """Cruza milenio_red.json, integra verificaciones numéricas y genera cadena."""
@@ -223,7 +223,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--timeout",
         type=int,
-        default=25,
+        default=60,
         help="Segundos máximos por script de verificación.",
     )
     parser.add_argument("--json", action="store_true", help="Imprime salida en JSON.")

@@ -9,16 +9,24 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 15.0874,
+        "elapsed_seconds": 14.7962,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
       }
     },
     "turing_certify": {
-      "status": "timeout",
+      "status": "ok",
       "script": "scripts/turing_certify.py",
-      "timeout_s": 25
+      "data": {
+        "t_start": 100.0,
+        "t_end": 200.0,
+        "step": 0.05,
+        "dps": 15,
+        "intervals_checked": 2000,
+        "sign_changes_detected": 50,
+        "elapsed_seconds": 13.2174
+      }
     },
     "parallel_verify": {
       "status": "ok",
@@ -28,7 +36,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 6.0594,
+        "elapsed_seconds": 8.6207,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

@@ -1,11 +1,12 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 73,
+  "total_scanned_files": 75,
   "problems_summary": {
     "riemann": {
-      "file_count": 22,
+      "file_count": 23,
       "files": [
         "README.md",
+        "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/RED_MILENIO.md",
@@ -66,8 +67,9 @@
       ]
     },
     "yang_mills": {
-      "file_count": 20,
+      "file_count": 21,
       "files": [
+        "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -91,8 +93,9 @@
       ]
     },
     "hodge": {
-      "file_count": 17,
+      "file_count": 18,
       "files": [
+        "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -133,8 +136,9 @@
       ]
     },
     "poincare": {
-      "file_count": 24,
+      "file_count": 25,
       "files": [
+        "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -172,6 +176,24 @@
       ],
       "hit_counts": {
         "riemann": 1
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
+      "ext": ".md",
+      "size_bytes": 4709,
+      "problems": [
+        "riemann",
+        "yang_mills",
+        "hodge",
+        "poincare"
+      ],
+      "hit_counts": {
+        "riemann": 1,
+        "yang_mills": 1,
+        "hodge": 1,
+        "poincare": 1
       },
       "lean_markers": 0
     },
@@ -284,7 +306,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 25777,
+      "size_bytes": 25958,
       "problems": [
         "riemann",
         "yang_mills",
@@ -998,6 +1020,14 @@
       "lean_markers": 0
     },
     {
+      "path": "scripts/analizar_estructura.py",
+      "ext": ".py",
+      "size_bytes": 7223,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
       "path": "scripts/crypto_shield.py",
       "ext": ".py",
       "size_bytes": 3772,
@@ -1070,7 +1100,7 @@
     {
       "path": "scripts/tejer_y_subir.py",
       "ext": ".py",
-      "size_bytes": 4091,
+      "size_bytes": 4170,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
