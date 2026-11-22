@@ -1,6 +1,6 @@
 # Crónica y Estado del Laboratorio — 100 % Construido en Móvil
 
-- **Generado:** `2026-11-22 19:37:00 UTC`
+- **Generado:** `2026-11-22 19:43:22 UTC`
 - **Entorno de trabajo:** Móvil / Termux (sin ordenador de escritorio ni portátil)
 - **Archivos escaneados en la red:** **80**
 - **Nodos puente entre problemas:** **26**
@@ -37,12 +37,12 @@ Contiene las plantillas formales en Lean 4, módulos unificadores, piezas del He
 - `lean_templates/PolynomialMini.lean` (21 líneas, 663 B)
 - *...y 36 plantillas `.lean` más en `lean_templates/`.*
 
-### `scripts/` (15 scripts · 2065 líneas totales)
+### `scripts/` (15 scripts · 2077 líneas totales)
 Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditoría Lean, el análisis documental y el despliegue:
 
 - `scripts/analizador.py` (141 líneas, 4151 B)
 - `scripts/analizar_estructura.py` (188 líneas, 7492 B)
-- `scripts/benchmark_movil.py` (83 líneas, 3169 B)
+- `scripts/benchmark_movil.py` (95 líneas, 3932 B)
 - `scripts/crypto_shield.py` (117 líneas, 3772 B)
 - `scripts/crypto_unshield.py` (121 líneas, 3946 B)
 - `scripts/generar_cronica_movil.py` (195 líneas, 8705 B)
@@ -56,34 +56,35 @@ Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditor�
 - `scripts/verify_riemann_zeros.py` (101 líneas, 3159 B)
 - `scripts/verify_zeros.py` (81 líneas, 2520 B)
 
-### `docs/` (13 documentos/reportes · 4999 líneas totales)
+### `docs/` (13 documentos/reportes · 5002 líneas totales)
 Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Markdown regenerados por el *pipeline*:
 
-- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5081 B)
-- `docs/CADENA_MILENIO.md` (42 líneas, 3392 B)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md` (98 líneas, 6332 B)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5082 B)
+- `docs/CADENA_MILENIO.md` (42 líneas, 3393 B)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md` (100 líneas, 6442 B)
 - `docs/HEPTALOGO_MANIFEST.md` (14 líneas, 838 B)
 - `docs/HEPTALOGO_REPORT.md` (56 líneas, 3767 B)
 - `docs/RED_MILENIO.md` (151 líneas, 5429 B)
 - `docs/SISTEMA_PETRUSKA_FENIX.md` (47 líneas, 4633 B)
-- `docs/benchmark_movil.json` (30 líneas, 1400 B)
-- `docs/milenio_cadena.json` (353 líneas, 7558 B)
+- `docs/benchmark_movil.json` (31 líneas, 1418 B)
+- `docs/milenio_cadena.json` (353 líneas, 7559 B)
 - `docs/milenio_red.json` (1201 líneas, 27927 B)
 - `docs/millennium_dossier.pdf` (2844 líneas, 102658 B)
 - `docs/millennium_dossier_resumen.txt` (27 líneas, 1036 B)
-- `docs/verificacion_numerica.json` (46 líneas, 1083 B)
+- `docs/verificacion_numerica.json` (46 líneas, 1084 B)
 
 ## 3. Estado de verificación numérica
 
 - **`verify_zeros`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 14.4464, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 15.7365, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 - **`turing_certify`:** `ok`
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 11.3541}`
+  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 28.8538}`
 - **`parallel_verify`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.1496, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 10.3551, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Cómo se llegó hasta aquí (historial reciente)
 
+- `b2b1b4b | 2026-11-22 | feat(bench): add controlled mobile benchmark script and baseline results`
 - `6c3be7d | 2026-11-22 | feat(chronicle): add mobile build chronicle generator and hook into pipeline`
 - `ef8c9de | 2026-11-22 | chore(repo): add gitignore, requirements, and document 7 conjecture axioms`
 - `3bfd783 | 2026-11-22 | feat(chain): increase verifier timeout to 60s and include structure analysis in pipeline`
@@ -91,7 +92,6 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 - `22b75df | 2026-11-22 | feat(chain): add millennium network mapper, bridge weaver, and auto push script`
 - `6c0bfbe | 2026-11-21 | docs(readme): add practical CLI usage examples for scripts`
 - `d7f051d | 2026-11-21 | refactor(scripts): standardize CLI, portability, and structured output across remaining scripts`
-- `cb2969c | 2026-11-21 | refactor(lean): make auditor and exporter portable and add system overview doc`
 
 ## 5. Siguientes pasos naturales del laboratorio
 

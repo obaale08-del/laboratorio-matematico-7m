@@ -222,7 +222,7 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6332,
+      "size_bytes": 6442,
       "problems": [
         "navier_stokes",
         "hodge"
@@ -306,7 +306,7 @@
     {
       "path": "docs/benchmark_movil.json",
       "ext": ".json",
-      "size_bytes": 1400,
+      "size_bytes": 1418,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -332,7 +332,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 27580,
+      "size_bytes": 27927,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1064,7 +1064,7 @@
     {
       "path": "scripts/benchmark_movil.py",
       "ext": ".py",
-      "size_bytes": 3169,
+      "size_bytes": 3932,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0

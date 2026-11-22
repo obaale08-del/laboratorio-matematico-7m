@@ -47,20 +47,31 @@ def _run_cmd(args: list[str], timeout_s: int = 90) -> dict[str, Any]:
         }
 
 
-def run_benchmark(out_json: Path = DEFAULT_OUT, timeout_s: int = 90) -> dict[str, Any]:
-    """Ejecuta pruebas escalonadas de verificación numérica midiendo tiempos reales en móvil."""
-    cases = [
+def _cases_for_tier(tier: str) -> list[tuple[str, list[str]]]:
+    if tier == "high":
+        return [
+            ("verify_zeros_220", ["scripts/verify_zeros.py", "--start", "1", "--count", "220", "--dps", "30", "--json"]),
+            ("parallel_verify_450_w8", ["scripts/parallel_verify.py", "--start", "1", "--count", "450", "--dps", "30", "--workers", "8", "--json"]),
+            ("turing_100_300_step005", ["scripts/turing_certify.py", "--t-start", "100.0", "--t-end", "300.0", "--step", "0.05", "--dps", "15", "--json"]),
+        ]
+    return [
         ("verify_zeros_150", ["scripts/verify_zeros.py", "--start", "1", "--count", "150", "--dps", "30", "--json"]),
         ("parallel_verify_300_w8", ["scripts/parallel_verify.py", "--start", "1", "--count", "300", "--dps", "30", "--workers", "8", "--json"]),
         ("turing_100_250_step005", ["scripts/turing_certify.py", "--t-start", "100.0", "--t-end", "250.0", "--step", "0.05", "--dps", "15", "--json"]),
     ]
+
+
+def run_benchmark(out_json: Path = DEFAULT_OUT, timeout_s: int = 90, tier: str = "standard") -> dict[str, Any]:
+    """Ejecuta pruebas escalonadas de verificación numérica midiendo tiempos reales en móvil."""
+    cases = _cases_for_tier(tier)
     results: dict[str, Any] = {
         "generated_at_epoch": round(time.time(), 2),
+        "tier": tier,
         "timeout_per_case_s": timeout_s,
         "cases": {},
     }
     for name, cmd_args in cases:
-        print(f"Ejecutando {name}...")
+        print(f"[{tier}] Ejecutando {name}...")
         info = _run_cmd(cmd_args, timeout_s=timeout_s)
         results["cases"][name] = info
         print(f"  -> estado: {info['status']} | tiempo real: {info['wall_seconds']}s")
@@ -73,6 +84,7 @@ def run_benchmark(out_json: Path = DEFAULT_OUT, timeout_s: int = 90) -> dict[str
 
 def _build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description="Benchmark numérico controlado en Termux.")
+    p.add_argument("--tier", choices=["standard", "high"], default="standard", help="Nivel de carga del benchmark.")
     p.add_argument("--out-json", default=str(DEFAULT_OUT), help="Ruta JSON de salida.")
     p.add_argument("--timeout", type=int, default=90, help="Timeout por prueba en segundos.")
     return p
@@ -80,4 +92,4 @@ def _build_parser() -> argparse.ArgumentParser:
 
 if __name__ == "__main__":
     args = _build_parser().parse_args()
-    run_benchmark(out_json=Path(args.out_json), timeout_s=args.timeout)
+    run_benchmark(out_json=Path(args.out_json), timeout_s=args.timeout, tier=args.tier)
