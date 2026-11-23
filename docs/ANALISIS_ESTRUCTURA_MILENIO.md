@@ -17,7 +17,7 @@
 
 Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; los marcadores contabilizados corresponden a los **7 axiomas de conjetura abierta** (`*_universal_open_problem` en `rigorous_*.lean`).
 
-- `riemann`: **22** archivos | **1** marcadores Lean
+- `riemann`: **25** archivos | **1** marcadores Lean
 - `p_vs_np`: **9** archivos | **1** marcadores Lean
 - `navier_stokes`: **11** archivos | **1** marcadores Lean
 - `yang_mills`: **22** archivos | **1** marcadores Lean
@@ -27,12 +27,10 @@ Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; 
 
 ## 3. Datos numéricos registrados
 
-- `verify_zeros`: **ok**
-  - Detalle: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 12.3445, "anomalies": [], "errors": [], "all_within_tolerance": true}`
-- `turing_certify`: **ok**
-  - Detalle: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 10.3184}`
+- `verify_zeros`: **timeout**
+- `turing_certify`: **timeout**
 - `parallel_verify`: **ok**
-  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4366, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 31.4237, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Documentos principales que abordan los 7 problemas y la estructura
 

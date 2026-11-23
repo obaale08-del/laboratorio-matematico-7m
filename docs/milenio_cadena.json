@@ -1,7 +1,7 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 84,
+  "total_files": 165,
   "bridge_file_count": 19,
   "bridge_files": [
     {
@@ -234,7 +234,7 @@
     "poincare": 1
   },
   "problem_file_counts": {
-    "riemann": 22,
+    "riemann": 25,
     "p_vs_np": 9,
     "navier_stokes": 11,
     "yang_mills": 22,
@@ -243,37 +243,20 @@
     "poincare": 21
   },
   "verifiers_status": {
-    "verify_zeros": "ok",
-    "turing_certify": "ok",
+    "verify_zeros": "timeout",
+    "turing_certify": "timeout",
     "parallel_verify": "ok"
   },
   "verifiers": {
     "verify_zeros": {
-      "status": "ok",
+      "status": "timeout",
       "script": "scripts/verify_zeros.py",
-      "data": {
-        "start_index": 1,
-        "count": 100,
-        "dps": 30,
-        "tolerance": "1.0e-24",
-        "elapsed_seconds": 12.3445,
-        "anomalies": [],
-        "errors": [],
-        "all_within_tolerance": true
-      }
+      "timeout_s": 60
     },
     "turing_certify": {
-      "status": "ok",
+      "status": "timeout",
       "script": "scripts/turing_certify.py",
-      "data": {
-        "t_start": 100.0,
-        "t_end": 200.0,
-        "step": 0.05,
-        "dps": 15,
-        "intervals_checked": 2000,
-        "sign_changes_detected": 50,
-        "elapsed_seconds": 10.3184
-      }
+      "timeout_s": 60
     },
     "parallel_verify": {
       "status": "ok",
@@ -283,7 +266,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 7.4366,
+        "elapsed_seconds": 31.4237,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

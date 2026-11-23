@@ -4,18 +4,18 @@ Archivos puente (conectan 2 o más problemas): **19**
 
 ## Verificaciones numéricas y certificación
 
-- `verify_zeros` (`scripts/verify_zeros.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 12.3445, "anomalies": []}`
-- `turing_certify` (`scripts/turing_certify.py`): **ok**
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50}`
+- `verify_zeros` (`scripts/verify_zeros.py`): **timeout**
+  - Detalle: `timeout tras 60s`
+- `turing_certify` (`scripts/turing_certify.py`): **timeout**
+  - Detalle: `timeout tras 60s`
 - `parallel_verify` (`scripts/parallel_verify.py`): **ok**
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4366, "anomalies": []}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 31.4237, "anomalies": []}`
 
 ## Marcadores Lean (`sorry`/`admit`/`axiom`) acumulados por línea
 
 > Auditoría en `lean_templates/`: **0 `sorry`**, **0 `admit`** y **7 `axiom`** (uno por problema en `rigorous_*.lean` como `*_universal_open_problem`).
 
-- `riemann`: **22** archivos | **1** marcadores Lean
+- `riemann`: **25** archivos | **1** marcadores Lean
 - `p_vs_np`: **9** archivos | **1** marcadores Lean
 - `navier_stokes`: **11** archivos | **1** marcadores Lean
 - `yang_mills`: **22** archivos | **1** marcadores Lean

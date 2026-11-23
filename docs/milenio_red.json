@@ -358,7 +358,7 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 79,
+        "riemann": 85,
         "yang_mills": 87,
         "hodge": 89,
         "birch_swinnerton_dyer": 2,
@@ -573,7 +573,7 @@
         "riemann"
       ],
       "shared_files": 13,
-      "weight": 288,
+      "weight": 294,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -619,7 +619,7 @@
         "yang_mills"
       ],
       "shared_files": 12,
-      "weight": 267,
+      "weight": 273,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -641,7 +641,7 @@
         "riemann"
       ],
       "shared_files": 12,
-      "weight": 262,
+      "weight": 268,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -707,7 +707,7 @@
         "riemann"
       ],
       "shared_files": 8,
-      "weight": 124,
+      "weight": 130,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/RED_MILENIO.md",
@@ -886,7 +886,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5080,
+      "size_bytes": 5194,
       "problems": [
         "riemann",
         "yang_mills",
@@ -984,7 +984,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4930,
+      "size_bytes": 5081,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1046,7 +1046,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 45205,
+      "size_bytes": 60894,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1055,7 +1055,7 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 79,
+        "riemann": 85,
         "yang_mills": 87,
         "hodge": 89,
         "birch_swinnerton_dyer": 2,

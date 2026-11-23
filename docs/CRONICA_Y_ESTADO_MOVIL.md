@@ -1,8 +1,8 @@
 # Crónica y Estado del Laboratorio — 100 % Construido en Móvil
 
-- **Generado:** `2026-11-23 12:39:28 UTC`
+- **Generado:** `2026-11-23 19:00:13 UTC`
 - **Entorno de trabajo:** Móvil / Termux (sin ordenador de escritorio ni portátil)
-- **Archivos escaneados en la red:** **84**
+- **Archivos escaneados en la red:** **165**
 - **Nodos puente entre problemas:** **19**
 
 ## 1. Qué significa levantar este sistema desde el móvil
@@ -58,43 +58,42 @@ Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditor�
 - `scripts/verify_riemann_zeros.py` (101 líneas, 3159 B)
 - `scripts/verify_zeros.py` (81 líneas, 2520 B)
 
-### `docs/` (14 documentos/reportes · 5691 líneas totales)
+### `docs/` (15 documentos/reportes · 6348 líneas totales)
 Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Markdown regenerados por el *pipeline*:
 
-- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5080 B)
-- `docs/CADENA_MILENIO.md` (42 líneas, 3432 B)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md` (103 líneas, 6511 B)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 4874 B)
+- `docs/CADENA_MILENIO.md` (42 líneas, 3244 B)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md` (103 líneas, 6510 B)
 - `docs/GUIA_CLI_MOVIL.md` (55 líneas, 1867 B)
 - `docs/HEPTALOGO_MANIFEST.md` (14 líneas, 838 B)
 - `docs/HEPTALOGO_REPORT.md` (56 líneas, 3767 B)
-- `docs/RED_MILENIO.md` (141 líneas, 4930 B)
+- `docs/RED_MILENIO.md` (144 líneas, 5081 B)
 - `docs/SISTEMA_PETRUSKA_FENIX.md` (47 líneas, 4633 B)
+- `docs/auditoria_lean4_mathlib_movil.md` (25 líneas, 2831 B)
 - `docs/benchmark_movil.json` (31 líneas, 1418 B)
-- `docs/milenio_cadena.json` (293 líneas, 6329 B)
-- `docs/milenio_red.json` (1902 líneas, 45205 B)
+- `docs/milenio_cadena.json` (276 líneas, 5930 B)
+- `docs/milenio_red.json` (2565 líneas, 60894 B)
 - `docs/millennium_dossier.pdf` (2844 líneas, 102658 B)
 - `docs/millennium_dossier_resumen.txt` (27 líneas, 1036 B)
-- `docs/verificacion_numerica.json` (46 líneas, 1083 B)
+- `docs/verificacion_numerica.json` (29 líneas, 673 B)
 
 ## 3. Estado de verificación numérica
 
-- **`verify_zeros`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 12.3445, "anomalies": [], "errors": [], "all_within_tolerance": true}`
-- **`turing_certify`:** `ok`
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 10.3184}`
+- **`verify_zeros`:** `timeout`
+- **`turing_certify`:** `timeout`
 - **`parallel_verify`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4366, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 31.4237, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Cómo se llegó hasta aquí (historial reciente)
 
+- `e46e718 | 2026-11-23 | Update Millennium structure analysis and network map (165 files)`
+- `06b01bd | 2026-11-23 | Fix: deduplicate box definitions and remove deprecated import in ComplexContour.lean`
+- `7dda944 | 2026-11-23 | Docs: link mobile Lean 4 and Mathlib audit from README`
+- `84f1bc3 | 2026-11-23 | Docs: record TestVerify.lean execution metrics in mobile audit`
+- `20bc4d8 | 2026-11-23 | Docs: add Lean 4 and Mathlib mobile environment audit`
+- `77eec4f | 2026-11-23 | Add turing_verifier Lean and Python sources and update gitignore`
+- `a75e8e9 | 2026-11-23 | feat(chain): weave millennium network bridges and automate push pipeline`
 - `0c9de3d | 2026-11-23 | feat(chain): weave millennium network bridges and automate push pipeline`
-- `d1aaaaa | 2026-11-23 | feat(chain): weave millennium network bridges and automate push pipeline`
-- `cccf53f | 2026-11-23 | feat(mapa,lean): add bridge density weights, CLI filters, and Lean audit`
-- `e6e73ec | 2026-11-22 | refactor(mapa): require 2+ hits for isolated secondary problem matches`
-- `463f145 | 2026-11-22 | refactor(mapa): tighten riemann and hodge regex patterns to reduce false bridges`
-- `ddfbf1a | 2026-11-22 | docs(cli): add quick Termux CLI guide and mobile load thresholds`
-- `e55b003 | 2026-11-22 | feat(area): descripcion breve del cambio`
-- `b3993ff | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
 
 ## 5. Siguientes pasos naturales del laboratorio
 
