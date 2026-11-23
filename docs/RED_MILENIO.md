@@ -1,10 +1,10 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **82**
+Archivos escaneados: **83**
 
 ## Cobertura por problema
 
-### `riemann` (21 archivos)
+### `riemann` (22 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/CRONICA_Y_ESTADO_MOVIL.md`
@@ -24,10 +24,11 @@ Archivos escaneados: **82**
 - `scripts/milenio_mapa.py`
 - `scripts/parallel_verify.py`
 - `scripts/turing_certify.py`
+- `scripts/verificar_cotas.py`
 - `scripts/verify_riemann_zeros.py`
 - `scripts/verify_zeros.py`
 
-### `p_vs_np` (8 archivos)
+### `p_vs_np` (9 archivos)
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/ComplexityBasic.lean`
 - `lean_templates/ConstructiveReduction.lean`
@@ -36,8 +37,9 @@ Archivos escaneados: **82**
 - `lean_templates/PvsNpBound.lean`
 - `lean_templates/p_vs_np_bound.lean`
 - `lean_templates/rigorous_p_vs_np.lean`
+- `scripts/verificar_cotas.py`
 
-### `navier_stokes` (10 archivos)
+### `navier_stokes` (11 archivos)
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/espectro_unificado_milenioum.lean`
@@ -48,8 +50,9 @@ Archivos escaneados: **82**
 - `lean_templates/rigorous_navier_stokes.lean`
 - `lean_templates/rigorous_navier_stokes_advanced.lean`
 - `scripts/milenio_mapa.py`
+- `scripts/verificar_cotas.py`
 
-### `yang_mills` (21 archivos)
+### `yang_mills` (22 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
@@ -71,8 +74,9 @@ Archivos escaneados: **82**
 - `lean_templates/yang_mills_mass_gap.lean`
 - `lean_templates/yang_mills_mass_gap_positivity.lean`
 - `scripts/milenio_mapa.py`
+- `scripts/verificar_cotas.py`
 
-### `hodge` (19 archivos)
+### `hodge` (20 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/CRONICA_Y_ESTADO_MOVIL.md`
@@ -92,8 +96,9 @@ Archivos escaneados: **82**
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_hodge.lean`
 - `scripts/milenio_mapa.py`
+- `scripts/verificar_cotas.py`
 
-### `birch_swinnerton_dyer` (16 archivos)
+### `birch_swinnerton_dyer` (17 archivos)
 - `docs/HEPTALOGO_MANIFEST.md`
 - `docs/HEPTALOGO_REPORT.md`
 - `docs/RED_MILENIO.md`
@@ -110,8 +115,9 @@ Archivos escaneados: **82**
 - `lean_templates/millennium_master_unified.lean`
 - `lean_templates/rigorous_bsd.lean`
 - `scripts/milenio_mapa.py`
+- `scripts/verificar_cotas.py`
 
-### `poincare` (20 archivos)
+### `poincare` (21 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
@@ -132,3 +138,4 @@ Archivos escaneados: **82**
 - `lean_templates/poincare_euler_characteristic.lean`
 - `lean_templates/rigorous_poincare.lean`
 - `scripts/milenio_mapa.py`
+- `scripts/verificar_cotas.py`

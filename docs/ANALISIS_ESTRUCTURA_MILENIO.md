@@ -2,13 +2,13 @@
 
 ## 1. Estructura general del repositorio
 
-- Archivos escaneados en la red: **82**
-- Nodos puente (2 o más problemas): **18**
+- Archivos escaneados en la red: **83**
+- Nodos puente (2 o más problemas): **19**
 
 ### Distribución por carpeta / bloque
 
 - `lean_templates`: **51** archivo(s)
-- `scripts`: **16** archivo(s)
+- `scripts`: **17** archivo(s)
 - `docs`: **13** archivo(s)
 - `<raiz>`: **2** archivo(s)
 
@@ -16,21 +16,22 @@
 
 Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; los marcadores contabilizados corresponden a los **7 axiomas de conjetura abierta** (`*_universal_open_problem` en `rigorous_*.lean`).
 
-- `riemann`: **21** archivos | **1** marcadores Lean
-- `p_vs_np`: **8** archivos | **1** marcadores Lean
-- `navier_stokes`: **10** archivos | **1** marcadores Lean
-- `yang_mills`: **21** archivos | **1** marcadores Lean
-- `hodge`: **19** archivos | **1** marcadores Lean
-- `birch_swinnerton_dyer`: **16** archivos | **1** marcadores Lean
-- `poincare`: **20** archivos | **1** marcadores Lean
+- `riemann`: **22** archivos | **1** marcadores Lean
+- `p_vs_np`: **9** archivos | **1** marcadores Lean
+- `navier_stokes`: **11** archivos | **1** marcadores Lean
+- `yang_mills`: **22** archivos | **1** marcadores Lean
+- `hodge`: **20** archivos | **1** marcadores Lean
+- `birch_swinnerton_dyer`: **17** archivos | **1** marcadores Lean
+- `poincare`: **21** archivos | **1** marcadores Lean
 
 ## 3. Datos numéricos registrados
 
-- `verify_zeros`: **timeout**
+- `verify_zeros`: **ok**
+  - Detalle: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 10.281, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 - `turing_certify`: **ok**
-  - Detalle: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 9.46}`
+  - Detalle: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 10.1042}`
 - `parallel_verify`: **ok**
-  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4344, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 6.8239, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Documentos principales que abordan los 7 problemas y la estructura
 

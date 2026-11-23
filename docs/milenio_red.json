@@ -1,10 +1,10 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 82,
-  "total_bridge_nodes": 18,
+  "total_scanned_files": 83,
+  "total_bridge_nodes": 19,
   "problems_summary": {
     "riemann": {
-      "file_count": 21,
+      "file_count": 22,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -25,12 +25,13 @@
         "scripts/milenio_mapa.py",
         "scripts/parallel_verify.py",
         "scripts/turing_certify.py",
+        "scripts/verificar_cotas.py",
         "scripts/verify_riemann_zeros.py",
         "scripts/verify_zeros.py"
       ]
     },
     "p_vs_np": {
-      "file_count": 8,
+      "file_count": 9,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/ComplexityBasic.lean",
@@ -39,11 +40,12 @@
         "lean_templates/NPCompletenessMini.lean",
         "lean_templates/PvsNpBound.lean",
         "lean_templates/p_vs_np_bound.lean",
-        "lean_templates/rigorous_p_vs_np.lean"
+        "lean_templates/rigorous_p_vs_np.lean",
+        "scripts/verificar_cotas.py"
       ]
     },
     "navier_stokes": {
-      "file_count": 10,
+      "file_count": 11,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
@@ -54,11 +56,12 @@
         "lean_templates/navier_stokes_bound.lean",
         "lean_templates/rigorous_navier_stokes.lean",
         "lean_templates/rigorous_navier_stokes_advanced.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     "yang_mills": {
-      "file_count": 21,
+      "file_count": 22,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -80,11 +83,12 @@
         "lean_templates/yang_mills.lean",
         "lean_templates/yang_mills_mass_gap.lean",
         "lean_templates/yang_mills_mass_gap_positivity.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     "hodge": {
-      "file_count": 19,
+      "file_count": 20,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -104,11 +108,12 @@
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
         "lean_templates/rigorous_hodge.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     "birch_swinnerton_dyer": {
-      "file_count": 16,
+      "file_count": 17,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -125,11 +130,12 @@
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
         "lean_templates/rigorous_bsd.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     "poincare": {
-      "file_count": 20,
+      "file_count": 21,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -150,7 +156,8 @@
         "lean_templates/poincare_conjecture.lean",
         "lean_templates/poincare_euler_characteristic.lean",
         "lean_templates/rigorous_poincare.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     }
   },
@@ -265,9 +272,9 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 14,
+        "riemann": 15,
         "yang_mills": 18,
-        "hodge": 18,
+        "hodge": 19,
         "poincare": 17
       }
     },
@@ -456,6 +463,28 @@
         "birch_swinnerton_dyer": 3,
         "poincare": 2
       }
+    },
+    {
+      "path": "scripts/verificar_cotas.py",
+      "problem_count": 7,
+      "problems": [
+        "riemann",
+        "p_vs_np",
+        "navier_stokes",
+        "yang_mills",
+        "hodge",
+        "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "hit_counts": {
+        "riemann": 7,
+        "p_vs_np": 2,
+        "navier_stokes": 6,
+        "yang_mills": 3,
+        "hodge": 4,
+        "birch_swinnerton_dyer": 6,
+        "poincare": 4
+      }
     }
   ],
   "bridge_edges": [
@@ -464,8 +493,8 @@
         "hodge",
         "poincare"
       ],
-      "shared_files": 15,
-      "weight": 281,
+      "shared_files": 16,
+      "weight": 290,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -481,7 +510,8 @@
         "lean_templates/hodge.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -489,8 +519,8 @@
         "hodge",
         "yang_mills"
       ],
-      "shared_files": 14,
-      "weight": 280,
+      "shared_files": 15,
+      "weight": 288,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -505,7 +535,8 @@
         "lean_templates/PetruskaTactics.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -513,8 +544,8 @@
         "poincare",
         "yang_mills"
       ],
-      "shared_files": 14,
-      "weight": 262,
+      "shared_files": 15,
+      "weight": 269,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -529,7 +560,8 @@
         "lean_templates/PetruskaTactics.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -537,8 +569,8 @@
         "hodge",
         "riemann"
       ],
-      "shared_files": 12,
-      "weight": 261,
+      "shared_files": 13,
+      "weight": 274,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -551,7 +583,8 @@
         "lean_templates/hodge.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -559,8 +592,8 @@
         "birch_swinnerton_dyer",
         "yang_mills"
       ],
-      "shared_files": 12,
-      "weight": 133,
+      "shared_files": 13,
+      "weight": 142,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -573,7 +606,8 @@
         "lean_templates/PetruskaTactics.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -581,8 +615,8 @@
         "riemann",
         "yang_mills"
       ],
-      "shared_files": 11,
-      "weight": 243,
+      "shared_files": 12,
+      "weight": 254,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -594,7 +628,8 @@
         "lean_templates/espectro_unificado_milenioum.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -602,8 +637,8 @@
         "poincare",
         "riemann"
       ],
-      "shared_files": 11,
-      "weight": 236,
+      "shared_files": 12,
+      "weight": 248,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -615,7 +650,8 @@
         "lean_templates/hodge.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -623,8 +659,8 @@
         "birch_swinnerton_dyer",
         "hodge"
       ],
-      "shared_files": 11,
-      "weight": 135,
+      "shared_files": 12,
+      "weight": 145,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -636,7 +672,8 @@
         "lean_templates/PetruskaTactics.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -644,8 +681,8 @@
         "birch_swinnerton_dyer",
         "poincare"
       ],
-      "shared_files": 11,
-      "weight": 118,
+      "shared_files": 12,
+      "weight": 128,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -657,24 +694,43 @@
         "lean_templates/PetruskaTactics.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
       "problems": [
         "birch_swinnerton_dyer",
+        "riemann"
+      ],
+      "shared_files": 8,
+      "weight": 116,
+      "files": [
+        "docs/HEPTALOGO_MANIFEST.md",
+        "docs/RED_MILENIO.md",
+        "docs/milenio_red.json",
+        "docs/millennium_dossier_resumen.txt",
+        "lean_templates/millennium_absolute_resolution.lean",
+        "lean_templates/millennium_master_unified.lean",
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
+      ]
+    },
+    {
+      "problems": [
+        "navier_stokes",
         "riemann"
       ],
       "shared_files": 7,
-      "weight": 103,
+      "weight": 33,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
-        "docs/RED_MILENIO.md",
-        "docs/milenio_red.json",
         "docs/millennium_dossier_resumen.txt",
+        "lean_templates/espectro_unificado_milenioum.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -682,46 +738,16 @@
         "navier_stokes",
         "yang_mills"
       ],
-      "shared_files": 6,
-      "weight": 24,
+      "shared_files": 7,
+      "weight": 33,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/espectro_unificado_milenioum.lean",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
-      ]
-    },
-    {
-      "problems": [
-        "navier_stokes",
-        "riemann"
-      ],
-      "shared_files": 6,
-      "weight": 20,
-      "files": [
-        "docs/HEPTALOGO_MANIFEST.md",
-        "docs/millennium_dossier_resumen.txt",
-        "lean_templates/espectro_unificado_milenioum.lean",
-        "lean_templates/millennium_absolute_resolution.lean",
-        "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
-      ]
-    },
-    {
-      "problems": [
-        "hodge",
-        "navier_stokes"
-      ],
-      "shared_files": 5,
-      "weight": 28,
-      "files": [
-        "docs/HEPTALOGO_MANIFEST.md",
-        "docs/millennium_dossier_resumen.txt",
-        "lean_templates/millennium_absolute_resolution.lean",
-        "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -729,14 +755,31 @@
         "birch_swinnerton_dyer",
         "navier_stokes"
       ],
-      "shared_files": 5,
-      "weight": 27,
+      "shared_files": 6,
+      "weight": 39,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
+      ]
+    },
+    {
+      "problems": [
+        "hodge",
+        "navier_stokes"
+      ],
+      "shared_files": 6,
+      "weight": 38,
+      "files": [
+        "docs/HEPTALOGO_MANIFEST.md",
+        "docs/millennium_dossier_resumen.txt",
+        "lean_templates/millennium_absolute_resolution.lean",
+        "lean_templates/millennium_master_unified.lean",
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -744,14 +787,15 @@
         "navier_stokes",
         "poincare"
       ],
-      "shared_files": 5,
-      "weight": 19,
+      "shared_files": 6,
+      "weight": 29,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
         "lean_templates/millennium_absolute_resolution.lean",
         "lean_templates/millennium_master_unified.lean",
-        "scripts/milenio_mapa.py"
+        "scripts/milenio_mapa.py",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -759,21 +803,11 @@
         "birch_swinnerton_dyer",
         "p_vs_np"
       ],
-      "shared_files": 1,
-      "weight": 5,
+      "shared_files": 2,
+      "weight": 13,
       "files": [
-        "docs/millennium_dossier_resumen.txt"
-      ]
-    },
-    {
-      "problems": [
-        "hodge",
-        "p_vs_np"
-      ],
-      "shared_files": 1,
-      "weight": 5,
-      "files": [
-        "docs/millennium_dossier_resumen.txt"
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -781,21 +815,11 @@
         "navier_stokes",
         "p_vs_np"
       ],
-      "shared_files": 1,
-      "weight": 4,
+      "shared_files": 2,
+      "weight": 12,
       "files": [
-        "docs/millennium_dossier_resumen.txt"
-      ]
-    },
-    {
-      "problems": [
-        "p_vs_np",
-        "poincare"
-      ],
-      "shared_files": 1,
-      "weight": 4,
-      "files": [
-        "docs/millennium_dossier_resumen.txt"
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -803,10 +827,35 @@
         "p_vs_np",
         "riemann"
       ],
-      "shared_files": 1,
-      "weight": 3,
+      "shared_files": 2,
+      "weight": 12,
       "files": [
-        "docs/millennium_dossier_resumen.txt"
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
+      ]
+    },
+    {
+      "problems": [
+        "hodge",
+        "p_vs_np"
+      ],
+      "shared_files": 2,
+      "weight": 11,
+      "files": [
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
+      ]
+    },
+    {
+      "problems": [
+        "p_vs_np",
+        "poincare"
+      ],
+      "shared_files": 2,
+      "weight": 10,
+      "files": [
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
       ]
     },
     {
@@ -814,10 +863,11 @@
         "p_vs_np",
         "yang_mills"
       ],
-      "shared_files": 1,
-      "weight": 3,
+      "shared_files": 2,
+      "weight": 8,
       "files": [
-        "docs/millennium_dossier_resumen.txt"
+        "docs/millennium_dossier_resumen.txt",
+        "scripts/verificar_cotas.py"
       ]
     }
   ],
@@ -833,7 +883,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 5080,
+      "size_bytes": 4910,
       "problems": [
         "riemann",
         "yang_mills",
@@ -851,7 +901,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3397,
+      "size_bytes": 3304,
       "problems": [
         "riemann",
         "yang_mills",
@@ -869,7 +919,7 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6415,
+      "size_bytes": 6288,
       "problems": [
         "riemann",
         "hodge"
@@ -967,7 +1017,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 5864,
+      "size_bytes": 5825,
       "problems": [
         "riemann",
         "yang_mills",
@@ -975,9 +1025,9 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 14,
+        "riemann": 15,
         "yang_mills": 18,
-        "hodge": 18,
+        "hodge": 19,
         "poincare": 17
       },
       "lean_markers": 0
@@ -1029,7 +1079,7 @@
     {
       "path": "docs/verificacion_numerica.json",
       "ext": ".json",
-      "size_bytes": 1083,
+      "size_bytes": 864,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -1789,6 +1839,30 @@
       ],
       "hit_counts": {
         "riemann": 4
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "scripts/verificar_cotas.py",
+      "ext": ".py",
+      "size_bytes": 15288,
+      "problems": [
+        "riemann",
+        "p_vs_np",
+        "navier_stokes",
+        "yang_mills",
+        "hodge",
+        "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "hit_counts": {
+        "riemann": 7,
+        "p_vs_np": 2,
+        "navier_stokes": 6,
+        "yang_mills": 3,
+        "hodge": 4,
+        "birch_swinnerton_dyer": 6,
+        "poincare": 4
       },
       "lean_markers": 0
     },
