@@ -2,7 +2,7 @@
 
 ## 1. Estructura general del repositorio
 
-- Archivos escaneados en la red: **83**
+- Archivos escaneados en la red: **84**
 - Nodos puente (2 o más problemas): **19**
 
 ### Distribución por carpeta / bloque
@@ -10,7 +10,7 @@
 - `lean_templates`: **51** archivo(s)
 - `scripts`: **17** archivo(s)
 - `docs`: **13** archivo(s)
-- `<raiz>`: **2** archivo(s)
+- `<raiz>`: **3** archivo(s)
 
 ## 2. Cobertura y marcadores Lean por problema
 
@@ -27,11 +27,11 @@ Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; 
 ## 3. Datos numéricos registrados
 
 - `verify_zeros`: **ok**
-  - Detalle: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 11.5935, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Detalle: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 12.3445, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 - `turing_certify`: **ok**
-  - Detalle: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 13.8395}`
+  - Detalle: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 10.3184}`
 - `parallel_verify`: **ok**
-  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 8.9318, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Detalle: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4366, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Documentos principales que abordan los 7 problemas y la estructura
 

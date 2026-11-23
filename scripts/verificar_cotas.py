@@ -12,6 +12,9 @@ from dataclasses import dataclass
 
 # =====================================================================
 # 1. P vs NP: Semántica de fórmulas booleanas y cotas de crecimiento
+#    - Exacto: evaluación proposicional finita y desigualdades en N.
+#    - Modelo / no equivalente al problema: crecimiento 2^n vs polinomio
+#      no prueba P != NP por sí solo.
 # =====================================================================
 
 @dataclass(frozen=True)
@@ -106,7 +109,9 @@ def run_p_vs_np_checks(max_n: int = 5) -> dict:
 
 
 # =====================================================================
-# 2. Navier-Stokes (modelo reducido 1D): Disipación y decaimiento de E(t)
+# 2. Navier-Stokes: MODELO DE JUGUETE reducido (amortiguamiento lineal)
+#    - No incluye advección no lineal 3D ni presión; ilustra monotonía
+#      decreciente de energía para viscosidad nu > 0.
 # =====================================================================
 
 def simulate_dissipative_energy(
@@ -148,7 +153,9 @@ def simulate_dissipative_energy(
 
 
 # =====================================================================
-# 3. Birch & Swinnerton-Dyer (BSD): Conteo sobre F_p y cota de Hasse
+# 3. Birch & Swinnerton-Dyer (BSD): Conteo sobre F_p y COTA DE HASSE
+#    - Cota exacta: |a_p| <= 2 * sqrt(p) para curvas elípticas no
+#      singulares sobre F_p; no demuestra la conjetura de BSD.
 # =====================================================================
 
 def is_prime(n: int) -> bool:
@@ -240,7 +247,9 @@ def run_bsd_checks(a: int = -1, b: int = 0, primes: list[int] | None = None) -> 
 
 
 # =====================================================================
-# 4. Hipótesis de Riemann: Eta de Dirichlet y simetría conjugada
+# 4. Hipótesis de Riemann: IDENTIDADES DE ETA/ZETA y sondas numéricas
+#    - Identidades exactas (truncadas a N términos): zeta(2) = pi^2 / 6
+#      y simetría conjugada de eta; las sondas en Re(s)=0.5 son parciales.
 # =====================================================================
 
 def dirichlet_eta(s: complex, terms: int = 4000) -> complex:
@@ -297,7 +306,12 @@ def run_riemann_checks(terms: int = 4000) -> dict:
 
 
 # =====================================================================
-# 5. Yang-Mills, Hodge y Poincaré: Modelos discretos y consistencia
+# 5. Yang-Mills, Hodge y Poincaré:
+#    - Yang-Mills: MODELO DE JUGUETE (anillo 1D y plaqueta escalar; no es
+#      teoría gauge cuántica 4D ni prueba brecha de masas).
+#    - Hodge: MODELO DE JUGUETE (tabla fija de K3; no prueba conjetura).
+#    - Poincaré: IDENTIDAD EXACTA en superficies 2D (chi = V - E + F =
+#      2 - 2g); no prueba la conjetura de Poincaré en dimensión 3.
 # =====================================================================
 
 def run_yang_mills_hodge_poincare_checks(ring_n: int = 8) -> dict:
