@@ -1,10 +1,10 @@
 # Red de Archivos — 7 Problemas del Milenio (Petruska Fenix)
 
-Archivos escaneados: **84**
+Archivos escaneados: **165**
 
 ## Cobertura por problema
 
-### `riemann` (22 archivos)
+### `riemann` (25 archivos)
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/CRONICA_Y_ESTADO_MOVIL.md`
@@ -27,6 +27,9 @@ Archivos escaneados: **84**
 - `scripts/verificar_cotas.py`
 - `scripts/verify_riemann_zeros.py`
 - `scripts/verify_zeros.py`
+- `turing_verifier_src/generate_certified_boxes.py`
+- `turing_verifier_src/generate_real.py`
+- `turing_verifier_src/turing_certificate_detailed.json`
 
 ### `p_vs_np` (9 archivos)
 - `docs/millennium_dossier_resumen.txt`

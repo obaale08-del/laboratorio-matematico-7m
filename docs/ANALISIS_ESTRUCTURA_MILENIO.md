@@ -2,14 +2,15 @@
 
 ## 1. Estructura general del repositorio
 
-- Archivos escaneados en la red: **84**
+- Archivos escaneados en la red: **165**
 - Nodos puente (2 o más problemas): **19**
 
 ### Distribución por carpeta / bloque
 
+- `turing_verifier_src`: **80** archivo(s)
 - `lean_templates`: **51** archivo(s)
 - `scripts`: **17** archivo(s)
-- `docs`: **13** archivo(s)
+- `docs`: **14** archivo(s)
 - `<raiz>`: **3** archivo(s)
 
 ## 2. Cobertura y marcadores Lean por problema
@@ -66,7 +67,7 @@ Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; 
   - Entorno: Termux / Android Local Validation
 
 ### `README.md`
-- Líneas: **42** | Tamaño: **3102** bytes
+- Líneas: **53** | Tamaño: **3889** bytes
 - Secciones / encabezados detectados:
   - `# Petruska Fenix — Laboratorio Matemático Experimental 7M`
   - `## Estructura del repositorio`
@@ -75,6 +76,7 @@ Nota: los 51 archivos de `lean_templates/` suman **0 `sorry`** y **0 `admit`**; 
   - `### Auditoría y generación de plantillas Lean 4`
   - `### Verificación numérica y escaneo de cambios de signo`
   - `### Análisis de rendimiento y empaquetado con integridad`
+  - `## Evidencia de ejecución en entorno móvil (Lean 4 + Mathlib)`
 - Primeras líneas útiles:
   - # Petruska Fenix — Laboratorio Matemático Experimental 7M
   - Entorno experimental y de auditoría para investigación matemática numérica, plantillas formales en Lean 4 y documentación del proyecto **Petruska Fenix**. Combina scripts en Python, módulos y borradores en Lean 4, y documentos de referencia para explorar, auditar y estructurar hipótesis y cálculos.

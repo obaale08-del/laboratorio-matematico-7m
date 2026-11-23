@@ -1,10 +1,10 @@
 {
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
-  "total_scanned_files": 84,
+  "total_scanned_files": 165,
   "total_bridge_nodes": 19,
   "problems_summary": {
     "riemann": {
-      "file_count": 22,
+      "file_count": 25,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -27,7 +27,10 @@
         "scripts/turing_certify.py",
         "scripts/verificar_cotas.py",
         "scripts/verify_riemann_zeros.py",
-        "scripts/verify_zeros.py"
+        "scripts/verify_zeros.py",
+        "turing_verifier_src/generate_certified_boxes.py",
+        "turing_verifier_src/generate_real.py",
+        "turing_verifier_src/turing_certificate_detailed.json"
       ]
     },
     "p_vs_np": {
@@ -875,7 +878,7 @@
     {
       "path": "README.md",
       "ext": ".md",
-      "size_bytes": 3102,
+      "size_bytes": 3889,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -919,7 +922,7 @@
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6511,
+      "size_bytes": 6510,
       "problems": [
         "riemann",
         "hodge"
@@ -1007,6 +1010,14 @@
       "lean_markers": 0
     },
     {
+      "path": "docs/auditoria_lean4_mathlib_movil.md",
+      "ext": ".md",
+      "size_bytes": 2831,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
       "path": "docs/benchmark_movil.json",
       "ext": ".json",
       "size_bytes": 1418,
@@ -1035,7 +1046,7 @@
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 45043,
+      "size_bytes": 45205,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1896,6 +1907,658 @@
       "hit_counts": {
         "riemann": 6
       },
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/AllBoxes.lean",
+      "ext": ".lean",
+      "size_bytes": 24370,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/AnalyticLab.lean",
+      "ext": ".lean",
+      "size_bytes": 4738,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/BatchBoxes.lean",
+      "ext": ".lean",
+      "size_bytes": 1083,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/ComplexContour.lean",
+      "ext": ".lean",
+      "size_bytes": 16817,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/GeneratedBoxes.lean",
+      "ext": ".lean",
+      "size_bytes": 1334,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/InspectInterval.lean",
+      "ext": ".lean",
+      "size_bytes": 91,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main.lean",
+      "ext": ".lean",
+      "size_bytes": 527,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_1.lean",
+      "ext": ".lean",
+      "size_bytes": 837,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_1.lean",
+      "ext": ".lean",
+      "size_bytes": 861,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_10.lean",
+      "ext": ".lean",
+      "size_bytes": 686,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_11.lean",
+      "ext": ".lean",
+      "size_bytes": 686,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_12.lean",
+      "ext": ".lean",
+      "size_bytes": 688,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_2.lean",
+      "ext": ".lean",
+      "size_bytes": 863,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_3.lean",
+      "ext": ".lean",
+      "size_bytes": 866,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_4.lean",
+      "ext": ".lean",
+      "size_bytes": 869,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_5.lean",
+      "ext": ".lean",
+      "size_bytes": 682,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_6.lean",
+      "ext": ".lean",
+      "size_bytes": 682,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_7.lean",
+      "ext": ".lean",
+      "size_bytes": 682,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_8.lean",
+      "ext": ".lean",
+      "size_bytes": 682,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_12x_9.lean",
+      "ext": ".lean",
+      "size_bytes": 682,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_2.lean",
+      "ext": ".lean",
+      "size_bytes": 839,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_3.lean",
+      "ext": ".lean",
+      "size_bytes": 842,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_1.lean",
+      "ext": ".lean",
+      "size_bytes": 863,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_2.lean",
+      "ext": ".lean",
+      "size_bytes": 865,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_3.lean",
+      "ext": ".lean",
+      "size_bytes": 868,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_4.lean",
+      "ext": ".lean",
+      "size_bytes": 871,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_5.lean",
+      "ext": ".lean",
+      "size_bytes": 871,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_6x_6.lean",
+      "ext": ".lean",
+      "size_bytes": 871,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_1.lean",
+      "ext": ".lean",
+      "size_bytes": 868,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_2.lean",
+      "ext": ".lean",
+      "size_bytes": 870,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_3.lean",
+      "ext": ".lean",
+      "size_bytes": 873,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_4.lean",
+      "ext": ".lean",
+      "size_bytes": 876,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_5.lean",
+      "ext": ".lean",
+      "size_bytes": 876,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_6.lean",
+      "ext": ".lean",
+      "size_bytes": 876,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_7.lean",
+      "ext": ".lean",
+      "size_bytes": 689,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_8.lean",
+      "ext": ".lean",
+      "size_bytes": 689,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_9x_9.lean",
+      "ext": ".lean",
+      "size_bytes": 689,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_1.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_10.lean",
+      "ext": ".lean",
+      "size_bytes": 527,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_11.lean",
+      "ext": ".lean",
+      "size_bytes": 527,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_12.lean",
+      "ext": ".lean",
+      "size_bytes": 527,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_2.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_3.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_4.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_5.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_6.lean",
+      "ext": ".lean",
+      "size_bytes": 717,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_7.lean",
+      "ext": ".lean",
+      "size_bytes": 523,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_8.lean",
+      "ext": ".lean",
+      "size_bytes": 523,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/Main_Channel_LMFDB_12x_9.lean",
+      "ext": ".lean",
+      "size_bytes": 523,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/MasterProblems.lean",
+      "ext": ".lean",
+      "size_bytes": 310215,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/README.md",
+      "ext": ".md",
+      "size_bytes": 17,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/TestVerify.lean",
+      "ext": ".lean",
+      "size_bytes": 361,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/TuringVerifier/Basic.lean",
+      "ext": ".lean",
+      "size_bytes": 1112,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/TuringVerifier/IntervalArithmetic.lean",
+      "ext": ".lean",
+      "size_bytes": 543,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/TuringVerifier.lean",
+      "ext": ".lean",
+      "size_bytes": 163,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/certificate.json",
+      "ext": ".json",
+      "size_bytes": 339,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/certificate_delta.json",
+      "ext": ".json",
+      "size_bytes": 984128,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/certificate_macro.json",
+      "ext": ".json",
+      "size_bytes": 984998,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/certificate_massive.json",
+      "ext": ".json",
+      "size_bytes": 11593189,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/convert.py",
+      "ext": ".py",
+      "size_bytes": 2022,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/convert_macro.py",
+      "ext": ".py",
+      "size_bytes": 2632,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/fix_main.py",
+      "ext": ".py",
+      "size_bytes": 462,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate.py",
+      "ext": ".py",
+      "size_bytes": 2651,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_all_problems.py",
+      "ext": ".py",
+      "size_bytes": 4947,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_analytic_lab.py",
+      "ext": ".py",
+      "size_bytes": 4389,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_certified_boxes.py",
+      "ext": ".py",
+      "size_bytes": 3686,
+      "problems": [
+        "riemann"
+      ],
+      "hit_counts": {
+        "riemann": 1
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_channels.py",
+      "ext": ".py",
+      "size_bytes": 1641,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_channels_12x.py",
+      "ext": ".py",
+      "size_bytes": 2282,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_channels_6x.py",
+      "ext": ".py",
+      "size_bytes": 2040,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_channels_9x.py",
+      "ext": ".py",
+      "size_bytes": 2218,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_intervals.py",
+      "ext": ".py",
+      "size_bytes": 1409,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_massive.py",
+      "ext": ".py",
+      "size_bytes": 1661,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_million.py",
+      "ext": ".py",
+      "size_bytes": 1586,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/generate_real.py",
+      "ext": ".py",
+      "size_bytes": 1245,
+      "problems": [
+        "riemann"
+      ],
+      "hit_counts": {
+        "riemann": 4
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/import_lmfdb.py",
+      "ext": ".py",
+      "size_bytes": 2314,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/lake-manifest.json",
+      "ext": ".json",
+      "size_bytes": 3132,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/lakefile.lean",
+      "ext": ".lean",
+      "size_bytes": 229,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/patch_script.py",
+      "ext": ".py",
+      "size_bytes": 551,
+      "problems": [],
+      "hit_counts": {},
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/turing_certificate_detailed.json",
+      "ext": ".json",
+      "size_bytes": 1426289,
+      "problems": [
+        "riemann"
+      ],
+      "hit_counts": {
+        "riemann": 1
+      },
+      "lean_markers": 0
+    },
+    {
+      "path": "turing_verifier_src/update_main.py",
+      "ext": ".py",
+      "size_bytes": 798,
+      "problems": [],
+      "hit_counts": {},
       "lean_markers": 0
     }
   ]
