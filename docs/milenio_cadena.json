@@ -1,8 +1,8 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 81,
-  "bridge_file_count": 17,
+  "total_files": 82,
+  "bridge_file_count": 18,
   "bridge_files": [
     {
       "path": "docs/millennium_dossier_resumen.txt",
@@ -192,6 +192,15 @@
       "lean_markers": 0
     },
     {
+      "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "hodge"
+      ],
+      "lean_markers": 0
+    },
+    {
       "path": "lean_templates/HeptalogoDeepExtension.lean",
       "problem_count": 2,
       "problems": [
@@ -211,33 +220,24 @@
     "poincare": 1
   },
   "problem_file_counts": {
-    "riemann": 20,
+    "riemann": 21,
     "p_vs_np": 8,
     "navier_stokes": 10,
     "yang_mills": 21,
-    "hodge": 18,
+    "hodge": 19,
     "birch_swinnerton_dyer": 16,
     "poincare": 20
   },
   "verifiers_status": {
-    "verify_zeros": "ok",
+    "verify_zeros": "timeout",
     "turing_certify": "ok",
     "parallel_verify": "ok"
   },
   "verifiers": {
     "verify_zeros": {
-      "status": "ok",
+      "status": "timeout",
       "script": "scripts/verify_zeros.py",
-      "data": {
-        "start_index": 1,
-        "count": 100,
-        "dps": 30,
-        "tolerance": "1.0e-24",
-        "elapsed_seconds": 15.6585,
-        "anomalies": [],
-        "errors": [],
-        "all_within_tolerance": true
-      }
+      "timeout_s": 60
     },
     "turing_certify": {
       "status": "ok",
@@ -249,7 +249,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 13.3069
+        "elapsed_seconds": 9.46
       }
     },
     "parallel_verify": {
@@ -260,7 +260,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.0949,
+        "elapsed_seconds": 7.4344,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

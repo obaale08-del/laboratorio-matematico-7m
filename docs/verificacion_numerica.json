@@ -2,18 +2,9 @@
   "repo_root": "/data/data/com.termux/files/home/repo_petruska_fenix",
   "verifiers": {
     "verify_zeros": {
-      "status": "ok",
+      "status": "timeout",
       "script": "scripts/verify_zeros.py",
-      "data": {
-        "start_index": 1,
-        "count": 100,
-        "dps": 30,
-        "tolerance": "1.0e-24",
-        "elapsed_seconds": 15.6585,
-        "anomalies": [],
-        "errors": [],
-        "all_within_tolerance": true
-      }
+      "timeout_s": 60
     },
     "turing_certify": {
       "status": "ok",
@@ -25,7 +16,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 13.3069
+        "elapsed_seconds": 9.46
       }
     },
     "parallel_verify": {
@@ -36,7 +27,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 9.0949,
+        "elapsed_seconds": 7.4344,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

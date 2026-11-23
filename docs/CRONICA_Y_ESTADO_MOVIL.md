@@ -1,9 +1,9 @@
 # Crónica y Estado del Laboratorio — 100 % Construido en Móvil
 
-- **Generado:** `2026-11-22 21:41:33 UTC`
+- **Generado:** `2026-11-23 10:36:46 UTC`
 - **Entorno de trabajo:** Móvil / Termux (sin ordenador de escritorio ni portátil)
-- **Archivos escaneados en la red:** **81**
-- **Nodos puente entre problemas:** **17**
+- **Archivos escaneados en la red:** **82**
+- **Nodos puente entre problemas:** **18**
 
 ## 1. Qué significa levantar este sistema desde el móvil
 
@@ -37,18 +37,19 @@ Contiene las plantillas formales en Lean 4, módulos unificadores, piezas del He
 - `lean_templates/PolynomialMini.lean` (21 líneas, 663 B)
 - *...y 36 plantillas `.lean` más en `lean_templates/`.*
 
-### `scripts/` (15 scripts · 2089 líneas totales)
+### `scripts/` (16 scripts · 2295 líneas totales)
 Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditoría Lean, el análisis documental y el despliegue:
 
 - `scripts/analizador.py` (141 líneas, 4151 B)
 - `scripts/analizar_estructura.py` (188 líneas, 7492 B)
+- `scripts/auditar_lean.py` (107 líneas, 3726 B)
 - `scripts/benchmark_movil.py` (95 líneas, 3932 B)
 - `scripts/crypto_shield.py` (117 líneas, 3772 B)
 - `scripts/crypto_unshield.py` (121 líneas, 3946 B)
 - `scripts/generar_cronica_movil.py` (195 líneas, 8705 B)
 - `scripts/lean_auditor.py` (138 líneas, 4610 B)
 - `scripts/lean_exporter.py` (113 líneas, 3804 B)
-- `scripts/milenio_mapa.py` (183 líneas, 5527 B)
+- `scripts/milenio_mapa.py` (282 líneas, 9412 B)
 - `scripts/parallel_verify.py` (128 líneas, 4028 B)
 - `scripts/tejer_red.py` (247 líneas, 8955 B)
 - `scripts/tejer_y_subir.py` (126 líneas, 4253 B)
@@ -56,35 +57,35 @@ Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditor�
 - `scripts/verify_riemann_zeros.py` (101 líneas, 3159 B)
 - `scripts/verify_zeros.py` (81 líneas, 2520 B)
 
-### `docs/` (14 documentos/reportes · 4891 líneas totales)
+### `docs/` (14 documentos/reportes · 5567 líneas totales)
 Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Markdown regenerados por el *pipeline*:
 
-- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5080 B)
-- `docs/CADENA_MILENIO.md` (42 líneas, 3397 B)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md` (101 líneas, 6422 B)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (89 líneas, 4910 B)
+- `docs/CADENA_MILENIO.md` (42 líneas, 3304 B)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md` (101 líneas, 6415 B)
 - `docs/GUIA_CLI_MOVIL.md` (55 líneas, 1867 B)
 - `docs/HEPTALOGO_MANIFEST.md` (14 líneas, 838 B)
 - `docs/HEPTALOGO_REPORT.md` (56 líneas, 3767 B)
-- `docs/RED_MILENIO.md` (132 líneas, 4643 B)
+- `docs/RED_MILENIO.md` (134 líneas, 4713 B)
 - `docs/SISTEMA_PETRUSKA_FENIX.md` (47 líneas, 4633 B)
 - `docs/benchmark_movil.json` (31 líneas, 1418 B)
-- `docs/milenio_cadena.json` (270 líneas, 5864 B)
-- `docs/milenio_red.json` (1136 líneas, 26315 B)
+- `docs/milenio_cadena.json` (270 líneas, 5825 B)
+- `docs/milenio_red.json` (1820 líneas, 42986 B)
 - `docs/millennium_dossier.pdf` (2844 líneas, 102658 B)
 - `docs/millennium_dossier_resumen.txt` (27 líneas, 1036 B)
-- `docs/verificacion_numerica.json` (46 líneas, 1083 B)
+- `docs/verificacion_numerica.json` (37 líneas, 864 B)
 
 ## 3. Estado de verificación numérica
 
-- **`verify_zeros`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 15.6585, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+- **`verify_zeros`:** `timeout`
 - **`turing_certify`:** `ok`
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 13.3069}`
+  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 9.46}`
 - **`parallel_verify`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 9.0949, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 7.4344, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Cómo se llegó hasta aquí (historial reciente)
 
+- `e6e73ec | 2026-11-22 | refactor(mapa): require 2+ hits for isolated secondary problem matches`
 - `463f145 | 2026-11-22 | refactor(mapa): tighten riemann and hodge regex patterns to reduce false bridges`
 - `ddfbf1a | 2026-11-22 | docs(cli): add quick Termux CLI guide and mobile load thresholds`
 - `e55b003 | 2026-11-22 | feat(area): descripcion breve del cambio`
@@ -92,7 +93,6 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 - `ae8daa2 | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
 - `b2b1b4b | 2026-11-22 | feat(bench): add controlled mobile benchmark script and baseline results`
 - `6c3be7d | 2026-11-22 | feat(chronicle): add mobile build chronicle generator and hook into pipeline`
-- `ef8c9de | 2026-11-22 | chore(repo): add gitignore, requirements, and document 7 conjecture axioms`
 
 ## 5. Siguientes pasos naturales del laboratorio
 
