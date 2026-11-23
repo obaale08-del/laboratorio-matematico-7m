@@ -40,3 +40,14 @@ Todos los scripts admiten `--help` y `--json` (donde aplica) y resuelven rutas r
 - Medir transcodificación con `ffmpeg`: `python3 scripts/analizador.py --input ruta/a/video.mp4`
 - Empaquetar bundle con XOR + SHA-256: `python3 scripts/crypto_shield.py --bundle ruta/al/bundle.tar.gz`
 - Restaurar bundle y verificar SHA-256: `python3 scripts/crypto_unshield.py --out ruta/al/restaurado.tar.gz`
+
+## Evidencia de ejecución en entorno móvil (Lean 4 + Mathlib)
+
+La validación técnica de ejecutar y compilar Lean 4 + `Mathlib` en un entorno móvil sin PC (`Termux` + `Ubuntu proot-distro` en `aarch64-unknown-linux-gnu`) está documentada en:
+
+- 📄 **[Auditoría técnica: Lean 4 y Mathlib en entorno móvil](docs/auditoria_lean4_mathlib_movil.md)**
+
+### Resumen de comprobaciones registradas
+- **Toolchain y herramientas:** `leanprover/lean4:v4.34.0-rc2` (`elan 4.2.4`, `Lean 4.34.0-rc2` release `aarch64`, `Lake 5.0.0-src`) con `mathlib` fijado en `lake-manifest.json`.
+- **Compilación (`lake build TuringVerifier.IntervalArithmetic`):** Completada (`8921 jobs`) en `2m39.384s`.
+- **Ejecución (`lake env lean TestVerify.lean`):** Completada (`false` / `true`) en `3m34.691s`.
