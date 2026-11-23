@@ -12,3 +12,15 @@ __pycache__/
 .env
 .venv/
 venv/
+
+# Lean / Lake / Cachés / Archivos pesados (>100 MB)
+.lake/
+*/.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.trace
+certificate_million.json
+*.enc
+*.tar.gz

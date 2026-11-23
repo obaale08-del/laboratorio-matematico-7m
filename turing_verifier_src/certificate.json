@@ -1,0 +1,20 @@
+{
+  "theorem_name": "RiemannZeroVerification",
+  "range": {
+    "t_start": 0.0,
+    "t_end": 10.0,
+    "step": 0.1
+  },
+  "certified_zeros_count": 1,
+  "status": "verified",
+  "method": "ivt",
+  "subintervals": [
+    {
+      "index": 1,
+      "t_lower": 14.0,
+      "t_upper": 15.0,
+      "z_lower": -0.5,
+      "z_upper": 0.5
+    }
+  ]
+}
