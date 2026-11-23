@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pruebas numéricas y verificaciones de cotas para los 7 Problemas del Milenio (modelos)."""
+"""Pruebas numéricas, cotas y aserciones para los 7 Problemas del Milenio (modelos)."""
 
 from __future__ import annotations
 
@@ -90,6 +90,12 @@ def run_p_vs_np_checks(max_n: int = 5) -> dict:
                 }
             )
 
+    assert sat_cases["unsat_contradiction_x0_and_not_x0"] is False, "La contradicción debe ser UNSAT."
+    assert sat_cases["sat_2clauses_3vars"] is True, "f_sat_3cnf debe ser SAT."
+    assert sat_cases["sat_xor_chain_3vars"] is True, "f_xor_3 debe ser SAT."
+    assert quad_n10 == 305 and quad_bound_ok is True, "Falla la cota cuadrática para n <= 10."
+    assert crossover_n == 12, f"Se esperaba cruce en n=12, obtenido n={crossover_n}."
+
     return {
         "sat_cases": sat_cases,
         "quadratic_cost_n10": quad_n10,
@@ -125,6 +131,10 @@ def simulate_dissipative_energy(
         energies[i + 1] <= energies[i] + 1e-15 for i in range(len(energies) - 1)
     )
     total_decay = energies[0] - energies[-1]
+
+    assert non_negative is True, "La energía discreta debe mantenerse >= 0."
+    assert monotone_non_increasing is True, "La energía debe ser monótona no creciente."
+    assert total_decay >= -1e-15, "La disipación total no puede ser negativa."
 
     return {
         "e0": energies[0],
@@ -176,10 +186,7 @@ def count_elliptic_points_mod_p(a: int, b: int, p: int) -> int:
     return 1 + affine_pts
 
 
-def run_bsd_checks(a: int = -1, b: int = 0, primes: list[int] | None = None) -> dict:
-    if primes is None:
-        primes = [3, 5, 7, 11, 13, 17, 19, 23]
-
+def evaluate_single_curve(a: int, b: int, primes: list[int]) -> dict:
     rows = []
     all_within_hasse = True
     for p in primes:
@@ -206,11 +213,29 @@ def run_bsd_checks(a: int = -1, b: int = 0, primes: list[int] | None = None) -> 
         if y * y == x ** 3 + a * x + b
     ]
 
+    assert all_within_hasse is True, f"Cota de Hasse violada en y^2 = x^3 + {a}x + {b}."
+
     return {
         "curve": f"y^2 = x^3 + ({a})*x + ({b})",
         "known_small_integer_points": known_int_pts,
         "all_primes_within_hasse": all_within_hasse,
         "mod_p_samples": rows,
+    }
+
+
+def run_bsd_checks(a: int = -1, b: int = 0, primes: list[int] | None = None) -> dict:
+    if primes is None:
+        primes = [3, 5, 7, 11, 13, 17, 19, 23]
+
+    primary = evaluate_single_curve(a, b, primes)
+    secondary = evaluate_single_curve(0, 1, [5, 7, 11, 13, 17, 19])
+
+    return {
+        "primary_curve": primary,
+        "secondary_curve_y2_eq_x3_plus_1": secondary,
+        "all_curves_within_hasse": (
+            primary["all_primes_within_hasse"] and secondary["all_primes_within_hasse"]
+        ),
     }
 
 
@@ -240,25 +265,34 @@ def run_riemann_checks(terms: int = 4000) -> dict:
     zeta_2_exact = (math.pi ** 2) / 6.0
     err_zeta_2 = abs(zeta_2_est.real - zeta_2_exact)
 
-    s_crit = complex(0.5, 14.1347251417)
-    eta_crit = dirichlet_eta(s_crit, terms=terms)
+    probe_heights = [5.0, 14.1347251417, 21.0220396388, 25.0108575801]
+    critical_probes = []
+    for t_val in probe_heights:
+        s_pt = complex(0.5, t_val)
+        val_eta = dirichlet_eta(s_pt, terms=terms)
+        critical_probes.append(
+            {
+                "s": f"0.5+{t_val}j",
+                "eta_abs": round(abs(val_eta), 6),
+            }
+        )
 
     s_sample = complex(0.75, 5.0)
     eta_s = dirichlet_eta(s_sample, terms=terms)
     eta_conj = dirichlet_eta(s_sample.conjugate(), terms=terms)
     conj_diff = abs(eta_conj - eta_s.conjugate())
 
+    assert err_zeta_2 < 1e-6, f"Error en zeta(2) demasiado alto: {err_zeta_2}"
+    assert conj_diff < 1e-9, f"Simetría conjugada fuera de tolerancia: {conj_diff}"
+
     return {
         "terms_used": terms,
         "zeta_2_est": round(zeta_2_est.real, 8),
         "zeta_2_exact": round(zeta_2_exact, 8),
         "zeta_2_abs_error": err_zeta_2,
-        "critical_line_probe": {
-            "s": f"{s_crit.real}+{s_crit.imag}j",
-            "eta_abs": round(abs(eta_crit), 6),
-        },
+        "critical_line_probes": critical_probes,
         "conjugate_symmetry_diff": conj_diff,
-        "conjugate_symmetry_ok": conj_diff < 1e-6,
+        "conjugate_symmetry_ok": conj_diff < 1e-9,
     }
 
 
@@ -267,16 +301,12 @@ def run_riemann_checks(terms: int = 4000) -> dict:
 # =====================================================================
 
 def run_yang_mills_hodge_poincare_checks(ring_n: int = 8) -> dict:
-    # Yang-Mills (juguete espectral): primer autovalor no nulo del Laplaciano 1D periódico
-    # lambda_k = 2 - 2*cos(2*pi*k/N); para k=1 es estrictamente positivo si N >= 3.
     if ring_n < 3:
         raise ValueError("ring_n debe ser >= 3 para brecha espectral positiva.")
     gap_lambda_1 = 2.0 - 2.0 * math.cos(2.0 * math.pi / ring_n)
-    # Energía de plaqueta simple: S = 1 - cos(theta); theta=0 -> S=0, theta=0.2 -> S > 0
     plaquette_vac = 1.0 - math.cos(0.0)
     plaquette_pert = 1.0 - math.cos(0.2)
 
-    # Hodge (diamante de superficie K3): h^{p,q}
     h_k3 = {
         (0, 0): 1, (1, 0): 0, (0, 1): 0,
         (2, 0): 1, (1, 1): 20, (0, 2): 1,
@@ -285,10 +315,6 @@ def run_yang_mills_hodge_poincare_checks(ring_n: int = 8) -> dict:
     sym_pq_ok = all(h_k3[(p, q)] == h_k3[(q, p)] for p, q in h_k3)
     chi_k3 = sum(((-1) ** (p + q)) * val for (p, q), val in h_k3.items())
 
-    # Poincaré (característica de Euler chi = V - E + F y género g):
-    # Tetraedro: V=4, E=6, F=4 -> chi=2, g=0
-    # Cubo:       V=8, E=12, F=6 -> chi=2, g=0
-    # Toro (mallado simple V=9, E=18, F=9): chi=0, g=1
     solids = [
         {"name": "tetraedro", "V": 4, "E": 6, "F": 4, "genus": 0},
         {"name": "cubo", "V": 8, "E": 12, "F": 6, "genus": 0},
@@ -306,6 +332,11 @@ def run_yang_mills_hodge_poincare_checks(ring_n: int = 8) -> dict:
                 "matches": chi_vf == chi_genus,
             }
         )
+
+    assert gap_lambda_1 > 0.0, "La brecha espectral discreta debe ser positiva."
+    assert plaquette_vac == 0.0 and plaquette_pert > 0.0, "Falla la acción de plaqueta juguete."
+    assert sym_pq_ok is True and chi_k3 == 24, "Falla la consistencia del diamante de Hodge K3."
+    assert all(item["matches"] for item in euler_checks), "Falla V - E + F == 2 - 2g."
 
     return {
         "yang_mills_toy": {
@@ -340,6 +371,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--bsd-b", type=int, default=0, help="Coeficiente b de y^2 = x^3 + ax + b.")
     parser.add_argument("--riemann-terms", type=int, default=4000, help="Términos para serie eta de Dirichlet.")
     parser.add_argument("--ring-n", type=int, default=8, help="Tamaño de red 1D para brecha espectral juguete.")
+    parser.add_argument("--selftest", action="store_true", help="Confirma explícitamente que todas las aserciones pasaron.")
     parser.add_argument("--json", action="store_true", help="Imprime salida en JSON.")
     return parser
 
@@ -360,6 +392,7 @@ if __name__ == "__main__":
         "birch_swinnerton_dyer": bsd_res,
         "riemann": rm_res,
         "yang_mills_hodge_poincare": ym_hp_res,
+        "selftest_passed": True,
     }
 
     if args.json:
@@ -386,13 +419,18 @@ if __name__ == "__main__":
         )
 
         print("\n=== Verificación BSD (conteo en F_p y cota de Hasse) ===")
+        prim = bsd_res["primary_curve"]
+        sec = bsd_res["secondary_curve_y2_eq_x3_plus_1"]
         print(
-            f"  - Curva: {bsd_res['curve']} | puntos enteros pequeños: {bsd_res['known_small_integer_points']}"
+            f"  - Curva 1: {prim['curve']} | enteros pequeños: {prim['known_small_integer_points']}"
         )
-        print(f"  - Todos los primos cumplen Hasse (|a_p| <= 2*sqrt(p)): {bsd_res['all_primes_within_hasse']}")
-        for row in bsd_res["mod_p_samples"][:5]:
+        print(
+            f"  - Curva 2: {sec['curve']} | enteros pequeños: {sec['known_small_integer_points']}"
+        )
+        print(f"  - Todas las curvas cumplen Hasse: {bsd_res['all_curves_within_hasse']}")
+        for row in prim["mod_p_samples"][:5]:
             print(
-                f"    p={row['p']:2d} -> #E(F_p)={row['points_Fp']:2d}, "
+                f"    [C1] p={row['p']:2d} -> #E(F_p)={row['points_Fp']:2d}, "
                 f"a_p={row['a_p']:+2d}, cota_Hasse={row['hasse_bound_2sqrt_p']}"
             )
 
@@ -401,10 +439,8 @@ if __name__ == "__main__":
             f"  - zeta(2) est={rm_res['zeta_2_est']} vs exacto={rm_res['zeta_2_exact']} "
             f"(error={rm_res['zeta_2_abs_error']:.2e})"
         )
-        print(
-            f"  - Sonda línea crítica s={rm_res['critical_line_probe']['s']} -> "
-            f"|eta(s)|={rm_res['critical_line_probe']['eta_abs']} (N={rm_res['terms_used']})"
-        )
+        for probe in rm_res["critical_line_probes"]:
+            print(f"  - Sonda s={probe['s']} -> |eta(s)|={probe['eta_abs']} (N={rm_res['terms_used']})")
         print(
             f"  - Simetría conjugada ok={rm_res['conjugate_symmetry_ok']} "
             f"(diff={rm_res['conjugate_symmetry_diff']:.2e})"
@@ -423,3 +459,6 @@ if __name__ == "__main__":
             f"chi={hg['euler_from_hodge_diamond']} (esperado={hg['expected_k3_euler']})"
         )
         print(f"  - Poincaré V-E+F == 2-2g en todas las muestras: {pc['all_match_2_minus_2g']}")
+
+        if args.selftest:
+            print("\n[SELFTEST OK] Todas las aserciones de cotas y consistencia se cumplieron.")

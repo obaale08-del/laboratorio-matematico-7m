@@ -242,8 +242,8 @@
       "hit_counts": {
         "riemann": 12,
         "yang_mills": 16,
-        "hodge": 15,
-        "poincare": 15
+        "hodge": 16,
+        "poincare": 16
       }
     },
     {
@@ -272,10 +272,10 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 15,
-        "yang_mills": 18,
-        "hodge": 19,
-        "poincare": 17
+        "riemann": 16,
+        "yang_mills": 19,
+        "hodge": 20,
+        "poincare": 18
       }
     },
     {
@@ -355,11 +355,11 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 75,
-        "yang_mills": 83,
-        "hodge": 85,
+        "riemann": 79,
+        "yang_mills": 87,
+        "hodge": 89,
         "birch_swinnerton_dyer": 2,
-        "poincare": 79
+        "poincare": 83
       }
     },
     {
@@ -478,12 +478,12 @@
       ],
       "hit_counts": {
         "riemann": 7,
-        "p_vs_np": 2,
+        "p_vs_np": 4,
         "navier_stokes": 6,
-        "yang_mills": 3,
+        "yang_mills": 2,
         "hodge": 4,
         "birch_swinnerton_dyer": 6,
-        "poincare": 4
+        "poincare": 3
       }
     }
   ],
@@ -494,7 +494,7 @@
         "poincare"
       ],
       "shared_files": 16,
-      "weight": 290,
+      "weight": 301,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -520,7 +520,7 @@
         "yang_mills"
       ],
       "shared_files": 15,
-      "weight": 288,
+      "weight": 298,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -545,7 +545,7 @@
         "yang_mills"
       ],
       "shared_files": 15,
-      "weight": 269,
+      "weight": 278,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -570,7 +570,7 @@
         "riemann"
       ],
       "shared_files": 13,
-      "weight": 274,
+      "weight": 285,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -593,7 +593,7 @@
         "yang_mills"
       ],
       "shared_files": 13,
-      "weight": 142,
+      "weight": 145,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -616,7 +616,7 @@
         "yang_mills"
       ],
       "shared_files": 12,
-      "weight": 254,
+      "weight": 263,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -638,7 +638,7 @@
         "riemann"
       ],
       "shared_files": 12,
-      "weight": 248,
+      "weight": 258,
       "files": [
         "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
         "docs/CADENA_MILENIO.md",
@@ -660,7 +660,7 @@
         "hodge"
       ],
       "shared_files": 12,
-      "weight": 145,
+      "weight": 149,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -682,7 +682,7 @@
         "poincare"
       ],
       "shared_files": 12,
-      "weight": 128,
+      "weight": 131,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/HEPTALOGO_REPORT.md",
@@ -704,7 +704,7 @@
         "riemann"
       ],
       "shared_files": 8,
-      "weight": 116,
+      "weight": 120,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/RED_MILENIO.md",
@@ -739,7 +739,7 @@
         "yang_mills"
       ],
       "shared_files": 7,
-      "weight": 33,
+      "weight": 32,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
@@ -788,7 +788,7 @@
         "poincare"
       ],
       "shared_files": 6,
-      "weight": 29,
+      "weight": 28,
       "files": [
         "docs/HEPTALOGO_MANIFEST.md",
         "docs/millennium_dossier_resumen.txt",
@@ -804,7 +804,7 @@
         "p_vs_np"
       ],
       "shared_files": 2,
-      "weight": 13,
+      "weight": 15,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -816,7 +816,7 @@
         "p_vs_np"
       ],
       "shared_files": 2,
-      "weight": 12,
+      "weight": 14,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -828,7 +828,7 @@
         "riemann"
       ],
       "shared_files": 2,
-      "weight": 12,
+      "weight": 14,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -840,7 +840,7 @@
         "p_vs_np"
       ],
       "shared_files": 2,
-      "weight": 11,
+      "weight": 13,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -852,7 +852,7 @@
         "poincare"
       ],
       "shared_files": 2,
-      "weight": 10,
+      "weight": 11,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -864,7 +864,7 @@
         "yang_mills"
       ],
       "shared_files": 2,
-      "weight": 8,
+      "weight": 9,
       "files": [
         "docs/millennium_dossier_resumen.txt",
         "scripts/verificar_cotas.py"
@@ -883,7 +883,7 @@
     {
       "path": "docs/ANALISIS_ESTRUCTURA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4910,
+      "size_bytes": 5079,
       "problems": [
         "riemann",
         "yang_mills",
@@ -901,7 +901,7 @@
     {
       "path": "docs/CADENA_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 3304,
+      "size_bytes": 3431,
       "problems": [
         "riemann",
         "yang_mills",
@@ -911,15 +911,15 @@
       "hit_counts": {
         "riemann": 12,
         "yang_mills": 16,
-        "hodge": 15,
-        "poincare": 15
+        "hodge": 16,
+        "poincare": 16
       },
       "lean_markers": 0
     },
     {
       "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
       "ext": ".md",
-      "size_bytes": 6288,
+      "size_bytes": 6510,
       "problems": [
         "riemann",
         "hodge"
@@ -981,7 +981,7 @@
     {
       "path": "docs/RED_MILENIO.md",
       "ext": ".md",
-      "size_bytes": 4713,
+      "size_bytes": 4930,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1017,7 +1017,7 @@
     {
       "path": "docs/milenio_cadena.json",
       "ext": ".json",
-      "size_bytes": 5825,
+      "size_bytes": 6328,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1025,17 +1025,17 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 15,
-        "yang_mills": 18,
-        "hodge": 19,
-        "poincare": 17
+        "riemann": 16,
+        "yang_mills": 19,
+        "hodge": 20,
+        "poincare": 18
       },
       "lean_markers": 0
     },
     {
       "path": "docs/milenio_red.json",
       "ext": ".json",
-      "size_bytes": 42986,
+      "size_bytes": 45042,
       "problems": [
         "riemann",
         "yang_mills",
@@ -1044,11 +1044,11 @@
         "poincare"
       ],
       "hit_counts": {
-        "riemann": 75,
-        "yang_mills": 83,
-        "hodge": 85,
+        "riemann": 79,
+        "yang_mills": 87,
+        "hodge": 89,
         "birch_swinnerton_dyer": 2,
-        "poincare": 79
+        "poincare": 83
       },
       "lean_markers": 0
     },
@@ -1079,7 +1079,7 @@
     {
       "path": "docs/verificacion_numerica.json",
       "ext": ".json",
-      "size_bytes": 864,
+      "size_bytes": 1082,
       "problems": [],
       "hit_counts": {},
       "lean_markers": 0
@@ -1845,7 +1845,7 @@
     {
       "path": "scripts/verificar_cotas.py",
       "ext": ".py",
-      "size_bytes": 15288,
+      "size_bytes": 17113,
       "problems": [
         "riemann",
         "p_vs_np",
@@ -1857,12 +1857,12 @@
       ],
       "hit_counts": {
         "riemann": 7,
-        "p_vs_np": 2,
+        "p_vs_np": 4,
         "navier_stokes": 6,
-        "yang_mills": 3,
+        "yang_mills": 2,
         "hodge": 4,
         "birch_swinnerton_dyer": 6,
-        "poincare": 4
+        "poincare": 3
       },
       "lean_markers": 0
     },

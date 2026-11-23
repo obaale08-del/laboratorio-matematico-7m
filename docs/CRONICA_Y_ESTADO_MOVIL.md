@@ -1,6 +1,6 @@
 # Crónica y Estado del Laboratorio — 100 % Construido en Móvil
 
-- **Generado:** `2026-11-23 11:05:43 UTC`
+- **Generado:** `2026-11-23 11:34:10 UTC`
 - **Entorno de trabajo:** Móvil / Termux (sin ordenador de escritorio ni portátil)
 - **Archivos escaneados en la red:** **83**
 - **Nodos puente entre problemas:** **19**
@@ -37,7 +37,7 @@ Contiene las plantillas formales en Lean 4, módulos unificadores, piezas del He
 - `lean_templates/PolynomialMini.lean` (21 líneas, 663 B)
 - *...y 36 plantillas `.lean` más en `lean_templates/`.*
 
-### `scripts/` (17 scripts · 2720 líneas totales)
+### `scripts/` (17 scripts · 2759 líneas totales)
 Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditoría Lean, el análisis documental y el despliegue:
 
 - `scripts/analizador.py` (141 líneas, 4151 B)
@@ -54,39 +54,40 @@ Separa el cálculo numérico, el mapeo de red, el tejido de puentes, la auditor�
 - `scripts/tejer_red.py` (247 líneas, 8955 B)
 - `scripts/tejer_y_subir.py` (126 líneas, 4253 B)
 - `scripts/turing_certify.py` (115 líneas, 3460 B)
-- `scripts/verificar_cotas.py` (425 líneas, 15288 B)
+- `scripts/verificar_cotas.py` (464 líneas, 17113 B)
 - `scripts/verify_riemann_zeros.py` (101 líneas, 3159 B)
 - `scripts/verify_zeros.py` (81 líneas, 2520 B)
 
-### `docs/` (14 documentos/reportes · 5681 líneas totales)
+### `docs/` (14 documentos/reportes · 5683 líneas totales)
 Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Markdown regenerados por el *pipeline*:
 
-- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5079 B)
-- `docs/CADENA_MILENIO.md` (42 líneas, 3431 B)
-- `docs/CRONICA_Y_ESTADO_MOVIL.md` (101 líneas, 6288 B)
+- `docs/ANALISIS_ESTRUCTURA_MILENIO.md` (90 líneas, 5080 B)
+- `docs/CADENA_MILENIO.md` (42 líneas, 3432 B)
+- `docs/CRONICA_Y_ESTADO_MOVIL.md` (103 líneas, 6510 B)
 - `docs/GUIA_CLI_MOVIL.md` (55 líneas, 1867 B)
 - `docs/HEPTALOGO_MANIFEST.md` (14 líneas, 838 B)
 - `docs/HEPTALOGO_REPORT.md` (56 líneas, 3767 B)
 - `docs/RED_MILENIO.md` (141 líneas, 4930 B)
 - `docs/SISTEMA_PETRUSKA_FENIX.md` (47 líneas, 4633 B)
 - `docs/benchmark_movil.json` (31 líneas, 1418 B)
-- `docs/milenio_cadena.json` (293 líneas, 6328 B)
-- `docs/milenio_red.json` (1894 líneas, 45042 B)
+- `docs/milenio_cadena.json` (293 líneas, 6329 B)
+- `docs/milenio_red.json` (1894 líneas, 45043 B)
 - `docs/millennium_dossier.pdf` (2844 líneas, 102658 B)
 - `docs/millennium_dossier_resumen.txt` (27 líneas, 1036 B)
-- `docs/verificacion_numerica.json` (46 líneas, 1082 B)
+- `docs/verificacion_numerica.json` (46 líneas, 1083 B)
 
 ## 3. Estado de verificación numérica
 
 - **`verify_zeros`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 10.281, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 100, "dps": 30, "tolerance": "1.0e-24", "elapsed_seconds": 11.5935, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 - **`turing_certify`:** `ok`
-  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 10.1042}`
+  - Métricas: `{"t_start": 100.0, "t_end": 200.0, "step": 0.05, "dps": 15, "intervals_checked": 2000, "sign_changes_detected": 50, "elapsed_seconds": 13.8395}`
 - **`parallel_verify`:** `ok`
-  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 6.8239, "anomalies": [], "errors": [], "all_within_tolerance": true}`
+  - Métricas: `{"start_index": 1, "count": 200, "dps": 30, "workers": 8, "elapsed_seconds": 8.9318, "anomalies": [], "errors": [], "all_within_tolerance": true}`
 
 ## 4. Cómo se llegó hasta aquí (historial reciente)
 
+- `d1aaaaa | 2026-11-23 | feat(chain): weave millennium network bridges and automate push pipeline`
 - `cccf53f | 2026-11-23 | feat(mapa,lean): add bridge density weights, CLI filters, and Lean audit`
 - `e6e73ec | 2026-11-22 | refactor(mapa): require 2+ hits for isolated secondary problem matches`
 - `463f145 | 2026-11-22 | refactor(mapa): tighten riemann and hodge regex patterns to reduce false bridges`
@@ -94,7 +95,6 @@ Combina manifiestos y resúmenes base del Heptálogo con los archivos JSON y Mar
 - `e55b003 | 2026-11-22 | feat(area): descripcion breve del cambio`
 - `b3993ff | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
 - `ae8daa2 | 2026-11-22 | feat(bench): add --tier high benchmark profile and mobile ceiling results`
-- `b2b1b4b | 2026-11-22 | feat(bench): add controlled mobile benchmark script and baseline results`
 
 ## 5. Siguientes pasos naturales del laboratorio
 
