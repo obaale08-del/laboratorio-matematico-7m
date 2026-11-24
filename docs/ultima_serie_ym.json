@@ -1,64 +1,64 @@
 {
-  "eje": "forma",
+  "eje": "disipacion",
   "delta": 0.25,
   "base": {
     "E_cin": 0.0612,
-    "forma": 0.8,
-    "duracion": 1.5,
-    "disipacion": 0.2
+    "forma": 0.85,
+    "duracion": 2.0,
+    "disipacion": 0.4
   },
-  "E_sweep": 0.1859,
-  "x_max": 0.3124,
+  "E_sweep": 0.2668,
+  "x_max": 0.3268,
   "total_muestras": 4,
-  "muestras_cruzan_delta": 3,
+  "muestras_cruzan_delta": 4,
   "muestras": [
     {
-      "forma": 0.55,
-      "duracion": 1.5,
-      "disipacion": 0.2,
+      "forma": 0.85,
+      "duracion": 2.0,
+      "disipacion": 0.4,
       "E_cin": 0.0612,
-      "Aporte": 0.1247,
-      "E_tot": 0.1859,
+      "Aporte": 0.2056,
+      "E_tot": 0.2668,
       "delta": 0.25,
-      "Margen": -0.0641,
-      "crosses_delta": false,
-      "etiqueta": "s1_forma_0.55"
-    },
-    {
-      "forma": 0.8,
-      "duracion": 1.5,
-      "disipacion": 0.2,
-      "E_cin": 0.0612,
-      "Aporte": 0.195,
-      "E_tot": 0.2562,
-      "delta": 0.25,
-      "Margen": 0.0062,
+      "Margen": 0.0168,
       "crosses_delta": true,
-      "etiqueta": "s2_forma_0.8"
+      "etiqueta": "s1_disipacion_0.4"
     },
     {
       "forma": 0.85,
-      "duracion": 1.5,
-      "disipacion": 0.2,
+      "duracion": 2.0,
+      "disipacion": 0.25,
       "E_cin": 0.0612,
-      "Aporte": 0.2091,
-      "E_tot": 0.2703,
+      "Aporte": 0.2281,
+      "E_tot": 0.2893,
       "delta": 0.25,
-      "Margen": 0.0203,
+      "Margen": 0.0393,
       "crosses_delta": true,
-      "etiqueta": "s3_forma_0.85"
+      "etiqueta": "s2_disipacion_0.25"
     },
     {
-      "forma": 1.0,
-      "duracion": 1.5,
-      "disipacion": 0.2,
+      "forma": 0.85,
+      "duracion": 2.0,
+      "disipacion": 0.1,
       "E_cin": 0.0612,
-      "Aporte": 0.2512,
-      "E_tot": 0.3124,
+      "Aporte": 0.2506,
+      "E_tot": 0.3118,
       "delta": 0.25,
-      "Margen": 0.0624,
+      "Margen": 0.0618,
       "crosses_delta": true,
-      "etiqueta": "s4_forma_1.0"
+      "etiqueta": "s3_disipacion_0.1"
+    },
+    {
+      "forma": 0.85,
+      "duracion": 2.0,
+      "disipacion": 0.0,
+      "E_cin": 0.0612,
+      "Aporte": 0.2656,
+      "E_tot": 0.3268,
+      "delta": 0.25,
+      "Margen": 0.0768,
+      "crosses_delta": true,
+      "etiqueta": "s4_disipacion_0.0"
     }
   ]
 }
