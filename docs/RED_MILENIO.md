@@ -30,8 +30,7 @@ Archivos escaneados: **170**
 - `turing_verifier_src/generate_real.py`
 - `turing_verifier_src/turing_certificate_detailed.json`
 
-### `p_vs_np` (10 archivos)
-- `docs/milenio_red.json`
+### `p_vs_np` (9 archivos)
 - `docs/millennium_dossier_resumen.txt`
 - `lean_templates/ComplexityBasic.lean`
 - `lean_templates/ConstructiveReduction.lean`
@@ -55,7 +54,8 @@ Archivos escaneados: **170**
 - `scripts/milenio_mapa.py`
 - `scripts/verificar_cotas.py`
 
-### `yang_mills` (23 archivos)
+### `yang_mills` (24 archivos)
+- `README.md`
 - `docs/ANALISIS_ESTRUCTURA_MILENIO.md`
 - `docs/CADENA_MILENIO.md`
 - `docs/HEPTALOGO_MANIFEST.md`
