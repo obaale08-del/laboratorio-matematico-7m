@@ -2,7 +2,21 @@
 
 > **Alcance:** Bitácora generada automáticamente desde el laboratorio experimental para trazar barridos numéricos, módulos Lean 4 y estado de trabajo antes de hacer `push`. Las cotas numéricas y plantillas formales no constituyen una resolución del problema abierto.
 
-## Registro 1: serie_forma_dur2_dis020
+## Registro 1: enlace_modulos_lean_ym
+- **Fecha (UTC):** `2026-11-24T12:17:05.750703+00:00`
+- **Git:** rama `main` en commit `1d2b145` | cambios locales: `2`
+- **Bloques activos:** `5` | **Muestras activas:** `9`
+- **Notas:** Enlazados modulos yang_mills*.lean y rigorous_yang_mills.lean en deslinde y tabla de trazabilidad de docs/NOTAS_EXPLORACION_YM.md
+
+| Archivo | Bloque | Umbral | E_sweep | x_max | Activos | Cruce |
+| :--- | :--- | ---: | ---: | ---: | ---: | :---: |
+| `ym_experimentos.txt` | `ym_experimentos` | 0.25 | 0.3169 | 0.3809 | 2 | True |
+| `ym_barrido.txt` | `1:Variando FORMA (duracion=1.0, disipacion=0.4)` | 0.25 | 0.2594 | 0.2943 | 2 | True |
+| `ym_barrido.txt` | `2:Variando DURACION (forma=0.80, disipacion=0.4)` | 0.25 | 0.276 | 0.2956 | 2 | True |
+| `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
+| `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
+
+## Registro 2: serie_forma_dur2_dis020
 - **Fecha (UTC):** `2026-11-24T11:03:52.416857+00:00`
 - **Git:** rama `main` en commit `e346696` | cambios locales: `2`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -16,7 +30,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 2: serie_duracion_forma090_dis015
+## Registro 3: serie_duracion_forma090_dis015
 - **Fecha (UTC):** `2026-11-24T10:58:15.342500+00:00`
 - **Git:** rama `main` en commit `6450c34` | cambios locales: `4`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -30,7 +44,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 3: deslinde_y_trazabilidad_4d
+## Registro 4: deslinde_y_trazabilidad_4d
 - **Fecha (UTC):** `2026-11-24T10:42:19.434880+00:00`
 - **Git:** rama `main` en commit `f12ce2c` | cambios locales: `5`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -44,7 +58,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 4: serie_disipacion_dur2_forma085
+## Registro 5: serie_disipacion_dur2_forma085
 - **Fecha (UTC):** `2026-11-24T10:22:27.280130+00:00`
 - **Git:** rama `main` en commit `25ab429` | cambios locales: `4`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -58,7 +72,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 5: series_duracion_y_forma
+## Registro 6: series_duracion_y_forma
 - **Fecha (UTC):** `2026-11-24T10:16:40.498792+00:00`
 - **Git:** rama `main` en commit `79b884c` | cambios locales: `4`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -72,7 +86,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 6: cuatro_facetas_y_serie_disipacion
+## Registro 7: cuatro_facetas_y_serie_disipacion
 - **Fecha (UTC):** `2026-11-24T10:05:32.428753+00:00`
 - **Git:** rama `main` en commit `6e71767` | cambios locales: `8`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -86,7 +100,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 7: baseline_ym_puente
+## Registro 8: baseline_ym_puente
 - **Fecha (UTC):** `2026-11-24T09:13:11.939259+00:00`
 - **Git:** rama `main` en commit `6e71767` | cambios locales: `4`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
