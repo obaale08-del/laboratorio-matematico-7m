@@ -1,6 +1,9 @@
+import argparse
 import json
 import re
+import sys
 from pathlib import Path
+from typing import Any
 
 TMP_DIR = Path.home() / "tmp"
 OUT_JSON = TMP_DIR / "ym_puente_lean.json"
@@ -17,11 +20,11 @@ def parse_delta(text: str, default: float = 0.25) -> float:
     return float(m.group(1)) if m else default
 
 
-def parse_active_rows(path: Path) -> tuple[float, list[dict]]:
+def parse_active_rows(path: Path) -> tuple[float, list[dict[str, Any]]]:
     text = path.read_text(encoding="utf-8", errors="ignore")
     delta = parse_delta(text)
     section = "general"
-    active = []
+    active: list[dict[str, Any]] = []
 
     for raw_line in text.splitlines():
         line = raw_line.strip()
@@ -61,7 +64,7 @@ def parse_active_rows(path: Path) -> tuple[float, list[dict]]:
     return delta, active
 
 
-def build_bound_summary(label: str, delta: float, rows: list[dict]) -> dict | None:
+def build_bound_summary(label: str, delta: float, rows: list[dict[str, Any]]) -> dict[str, Any] | None:
     if not rows:
         return None
     etots = [r["E_tot"] for r in rows]
@@ -86,19 +89,19 @@ def build_bound_summary(label: str, delta: float, rows: list[dict]) -> dict | No
     }
 
 
-def main() -> None:
-    resumen = {"archivos": []}
+def build_resumen() -> dict[str, Any]:
+    resumen: dict[str, Any] = {"archivos": []}
 
     for path in FILES:
         if not path.exists():
             continue
         delta, active = parse_active_rows(path)
 
-        by_sec: dict[str, list[dict]] = {}
+        by_sec: dict[str, list[dict[str, Any]]] = {}
         for r in active:
             by_sec.setdefault(r["seccion"], []).append(r)
 
-        bloques = []
+        bloques: list[dict[str, Any]] = []
         if len(by_sec) > 1:
             for sec, s_rows in by_sec.items():
                 b = build_bound_summary(sec, delta, s_rows)
@@ -116,15 +119,31 @@ def main() -> None:
             "bloques": bloques,
         })
 
-        print(f"=== {path.name} (delta={delta:.4f}, activos={len(active)}) ===")
-        for b in bloques:
+    return resumen
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Extrae cotas activas de Yang-Mills para Lean.")
+    parser.add_argument("--json", action="store_true", help="Imprime el resumen JSON por stdout.")
+    args = parser.parse_args()
+
+    resumen = build_resumen()
+    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
+    OUT_JSON.write_text(json.dumps(resumen, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    out_stream = sys.stderr if args.json else sys.stdout
+    for item in resumen["archivos"]:
+        print(f"=== {item['archivo']} (delta={item['delta']:.4f}, activos={item['total_activos']}) ===", file=out_stream)
+        for b in item["bloques"]:
             print(
                 f"  [{b['bloque']}] E_sweep={b['E_sweep']:.4f} | x_max={b['x_max']:.4f} "
-                f"| crosses_gap={b['sweep_bound_crosses_gap_holds']}"
+                f"| crosses_gap={b['sweep_bound_crosses_gap_holds']}",
+                file=out_stream,
             )
+    print(f"\nGuardado resumen en: {OUT_JSON}", file=out_stream)
 
-    OUT_JSON.write_text(json.dumps(resumen, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"\nGuardado resumen en: {OUT_JSON}")
+    if args.json:
+        print(json.dumps(resumen, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

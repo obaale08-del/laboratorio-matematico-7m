@@ -1,8 +1,8 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 165,
-  "bridge_file_count": 19,
+  "total_files": 6515,
+  "bridge_file_count": 38,
   "bridge_files": [
     {
       "path": "docs/millennium_dossier_resumen.txt",
@@ -206,11 +206,182 @@
       "lean_markers": 0
     },
     {
-      "path": "docs/CRONICA_Y_ESTADO_MOVIL.md",
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Asymptotics/TVS.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Basic.lean",
       "problem_count": 2,
       "problems": [
         "riemann",
-        "hodge"
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Box/Basic.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Integrability.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Complex/RemovableSingularity.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/EGauge.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/Gauge.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/GaugeRescale.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/LocallyConvex/AbsConvex.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/NormedSpace/HahnBanach/Separation.lean",
+      "problem_count": 2,
+      "problems": [
+        "yang_mills",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/CategoryTheory/Sites/MayerVietorisSquare.lean",
+      "problem_count": 2,
+      "problems": [
+        "hodge",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean",
+      "problem_count": 2,
+      "problems": [
+        "hodge",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/MeasureTheory/Covering/Differentiation.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/MeasureTheory/Function/Jacobian.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/Padics/Hensel.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Topology/UniformSpace/Completion.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": ".lake/packages/mathlib/scripts/nolints.json",
+      "problem_count": 2,
+      "problems": [
+        "p_vs_np",
+        "poincare"
       ],
       "lean_markers": 0
     },
@@ -225,38 +396,56 @@
     }
   ],
   "lean_markers_by_problem": {
-    "riemann": 1,
+    "riemann": 2,
     "p_vs_np": 1,
     "navier_stokes": 1,
     "yang_mills": 1,
     "hodge": 1,
     "birch_swinnerton_dyer": 1,
-    "poincare": 1
+    "poincare": 39
   },
   "problem_file_counts": {
-    "riemann": 25,
-    "p_vs_np": 9,
-    "navier_stokes": 11,
-    "yang_mills": 22,
-    "hodge": 20,
+    "riemann": 80,
+    "p_vs_np": 11,
+    "navier_stokes": 12,
+    "yang_mills": 29,
+    "hodge": 34,
     "birch_swinnerton_dyer": 17,
-    "poincare": 21
+    "poincare": 984
   },
   "verifiers_status": {
-    "verify_zeros": "timeout",
-    "turing_certify": "timeout",
-    "parallel_verify": "ok"
+    "verify_zeros": "ok",
+    "turing_certify": "ok",
+    "parallel_verify": "ok",
+    "puente_ym": "ok"
   },
   "verifiers": {
     "verify_zeros": {
-      "status": "timeout",
+      "status": "ok",
       "script": "scripts/verify_zeros.py",
-      "timeout_s": 60
+      "data": {
+        "start_index": 1,
+        "count": 100,
+        "dps": 30,
+        "tolerance": "1.0e-24",
+        "elapsed_seconds": 14.8634,
+        "anomalies": [],
+        "errors": [],
+        "all_within_tolerance": true
+      }
     },
     "turing_certify": {
-      "status": "timeout",
+      "status": "ok",
       "script": "scripts/turing_certify.py",
-      "timeout_s": 60
+      "data": {
+        "t_start": 100.0,
+        "t_end": 200.0,
+        "step": 0.05,
+        "dps": 15,
+        "intervals_checked": 2000,
+        "sign_changes_detected": 50,
+        "elapsed_seconds": 10.4741
+      }
     },
     "parallel_verify": {
       "status": "ok",
@@ -266,10 +455,185 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 31.4237,
+        "elapsed_seconds": 8.6328,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
+      }
+    },
+    "puente_ym": {
+      "status": "ok",
+      "script": "scripts/puente_ym_lean.py",
+      "data": {
+        "archivos": [
+          {
+            "archivo": "ym_experimentos.txt",
+            "delta": 0.25,
+            "total_activos": 2,
+            "bloques": [
+              {
+                "bloque": "ym_experimentos",
+                "delta": 0.25,
+                "E_sweep": 0.3169,
+                "x_max": 0.3809,
+                "activos": 2,
+                "StrictMassGapBound": true,
+                "E_sweep_ge_delta": true,
+                "x_max_ge_sweep": true,
+                "sweep_bound_crosses_gap_holds": true,
+                "muestras_activas": [
+                  {
+                    "seccion": "general",
+                    "etiqueta": "E4_baja_disipacion",
+                    "E_cin": 0.1013,
+                    "Aporte": 0.2797,
+                    "E_tot": 0.3809,
+                    "Margen": 0.1309,
+                    "Estado": "ACTIVA"
+                  },
+                  {
+                    "seccion": "general",
+                    "etiqueta": "E6_masa_mayor_lento",
+                    "E_cin": 0.1531,
+                    "Aporte": 0.1637,
+                    "E_tot": 0.3169,
+                    "Margen": 0.0669,
+                    "Estado": "ACTIVA"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "archivo": "ym_barrido.txt",
+            "delta": 0.25,
+            "total_activos": 6,
+            "bloques": [
+              {
+                "bloque": "1:Variando FORMA (duracion=1.0, disipacion=0.4)",
+                "delta": 0.25,
+                "E_sweep": 0.2594,
+                "x_max": 0.2943,
+                "activos": 2,
+                "StrictMassGapBound": true,
+                "E_sweep_ge_delta": true,
+                "x_max_ge_sweep": true,
+                "sweep_bound_crosses_gap_holds": true,
+                "muestras_activas": [
+                  {
+                    "seccion": "1:Variando FORMA (duracion=1.0, disipacion=0.4)",
+                    "etiqueta": "0.85",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.1981,
+                    "E_tot": 0.2594,
+                    "Margen": 0.0094,
+                    "Estado": "ACTIVA"
+                  },
+                  {
+                    "seccion": "1:Variando FORMA (duracion=1.0, disipacion=0.4)",
+                    "etiqueta": "1.00",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.2331,
+                    "E_tot": 0.2943,
+                    "Margen": 0.0443,
+                    "Estado": "ACTIVA"
+                  }
+                ]
+              },
+              {
+                "bloque": "2:Variando DURACION (forma=0.80, disipacion=0.4)",
+                "delta": 0.25,
+                "E_sweep": 0.276,
+                "x_max": 0.2956,
+                "activos": 2,
+                "StrictMassGapBound": true,
+                "E_sweep_ge_delta": true,
+                "x_max_ge_sweep": true,
+                "sweep_bound_crosses_gap_holds": true,
+                "muestras_activas": [
+                  {
+                    "seccion": "2:Variando DURACION (forma=0.80, disipacion=0.4)",
+                    "etiqueta": "1.50",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.2147,
+                    "E_tot": 0.276,
+                    "Margen": 0.026,
+                    "Estado": "ACTIVA"
+                  },
+                  {
+                    "seccion": "2:Variando DURACION (forma=0.80, disipacion=0.4)",
+                    "etiqueta": "2.50",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.2344,
+                    "E_tot": 0.2956,
+                    "Margen": 0.0456,
+                    "Estado": "ACTIVA"
+                  }
+                ]
+              },
+              {
+                "bloque": "3:Variando DISIPACION (forma=0.80, duracion=1.0)",
+                "delta": 0.25,
+                "E_sweep": 0.2788,
+                "x_max": 0.3223,
+                "activos": 2,
+                "StrictMassGapBound": true,
+                "E_sweep_ge_delta": true,
+                "x_max_ge_sweep": true,
+                "sweep_bound_crosses_gap_holds": true,
+                "muestras_activas": [
+                  {
+                    "seccion": "3:Variando DISIPACION (forma=0.80, duracion=1.0)",
+                    "etiqueta": "0.00",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.261,
+                    "E_tot": 0.3223,
+                    "Margen": 0.0723,
+                    "Estado": "ACTIVA"
+                  },
+                  {
+                    "seccion": "3:Variando DISIPACION (forma=0.80, duracion=1.0)",
+                    "etiqueta": "0.20",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.2175,
+                    "E_tot": 0.2788,
+                    "Margen": 0.0288,
+                    "Estado": "ACTIVA"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "archivo": "ym_compensacion.txt",
+            "delta": 0.25,
+            "total_activos": 1,
+            "bloques": [
+              {
+                "bloque": "ym_compensacion",
+                "delta": 0.25,
+                "E_sweep": 0.2608,
+                "x_max": 0.2608,
+                "activos": 1,
+                "StrictMassGapBound": true,
+                "E_sweep_ge_delta": true,
+                "x_max_ge_sweep": true,
+                "sweep_bound_crosses_gap_holds": true,
+                "muestras_activas": [
+                  {
+                    "seccion": "general",
+                    "etiqueta": "C4_forma055_dur20_dis01",
+                    "E_cin": 0.0612,
+                    "Aporte": 0.1995,
+                    "E_tot": 0.2608,
+                    "Margen": 0.0108,
+                    "Estado": "ACTIVA"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     }
   }

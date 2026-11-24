@@ -16,6 +16,7 @@ VERIFY_SCRIPTS: list[tuple[str, str]] = [
     ("verify_zeros", "scripts/verify_zeros.py"),
     ("turing_certify", "scripts/turing_certify.py"),
     ("parallel_verify", "scripts/parallel_verify.py"),
+    ("puente_ym", "scripts/puente_ym_lean.py"),
 ]
 
 
