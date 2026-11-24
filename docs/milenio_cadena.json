@@ -1,8 +1,8 @@
 {
   "source_map": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/milenio_red.json",
   "verification_file": "/data/data/com.termux/files/home/repo_petruska_fenix/docs/verificacion_numerica.json",
-  "total_files": 6515,
-  "bridge_file_count": 38,
+  "total_files": 170,
+  "bridge_file_count": 18,
   "bridge_files": [
     {
       "path": "docs/millennium_dossier_resumen.txt",
@@ -38,6 +38,19 @@
       "problems": [
         "riemann",
         "navier_stokes",
+        "yang_mills",
+        "hodge",
+        "birch_swinnerton_dyer",
+        "poincare"
+      ],
+      "lean_markers": 0
+    },
+    {
+      "path": "docs/milenio_red.json",
+      "problem_count": 6,
+      "problems": [
+        "riemann",
+        "p_vs_np",
         "yang_mills",
         "hodge",
         "birch_swinnerton_dyer",
@@ -86,18 +99,6 @@
     },
     {
       "path": "docs/RED_MILENIO.md",
-      "problem_count": 5,
-      "problems": [
-        "riemann",
-        "yang_mills",
-        "hodge",
-        "birch_swinnerton_dyer",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": "docs/milenio_red.json",
       "problem_count": 5,
       "problems": [
         "riemann",
@@ -196,196 +197,6 @@
       "lean_markers": 0
     },
     {
-      "path": "lean_templates/hodge.lean",
-      "problem_count": 3,
-      "problems": [
-        "riemann",
-        "hodge",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Asymptotics/TVS.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Basic.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Box/Basic.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/BoxIntegral/Integrability.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Complex/RemovableSingularity.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/EGauge.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/Gauge.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Convex/GaugeRescale.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/Fourier/RiemannLebesgueLemma.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/LocallyConvex/AbsConvex.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Analysis/NormedSpace/HahnBanach/Separation.lean",
-      "problem_count": 2,
-      "problems": [
-        "yang_mills",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/CategoryTheory/Sites/MayerVietorisSquare.lean",
-      "problem_count": 2,
-      "problems": [
-        "hodge",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Dynamics/Circle/RotationNumber/TranslationNumber.lean",
-      "problem_count": 2,
-      "problems": [
-        "hodge",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/MeasureTheory/Covering/Differentiation.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/MeasureTheory/Function/Jacobian.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/Padics/Hensel.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/Mathlib/Topology/UniformSpace/Completion.lean",
-      "problem_count": 2,
-      "problems": [
-        "riemann",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
-      "path": ".lake/packages/mathlib/scripts/nolints.json",
-      "problem_count": 2,
-      "problems": [
-        "p_vs_np",
-        "poincare"
-      ],
-      "lean_markers": 0
-    },
-    {
       "path": "lean_templates/HeptalogoDeepExtension.lean",
       "problem_count": 2,
       "problems": [
@@ -393,25 +204,34 @@
         "birch_swinnerton_dyer"
       ],
       "lean_markers": 0
+    },
+    {
+      "path": "lean_templates/hodge.lean",
+      "problem_count": 2,
+      "problems": [
+        "riemann",
+        "hodge"
+      ],
+      "lean_markers": 0
     }
   ],
   "lean_markers_by_problem": {
-    "riemann": 2,
+    "riemann": 1,
     "p_vs_np": 1,
     "navier_stokes": 1,
     "yang_mills": 1,
     "hodge": 1,
     "birch_swinnerton_dyer": 1,
-    "poincare": 39
+    "poincare": 1
   },
   "problem_file_counts": {
-    "riemann": 80,
-    "p_vs_np": 11,
-    "navier_stokes": 12,
-    "yang_mills": 29,
-    "hodge": 34,
+    "riemann": 24,
+    "p_vs_np": 10,
+    "navier_stokes": 11,
+    "yang_mills": 23,
+    "hodge": 19,
     "birch_swinnerton_dyer": 17,
-    "poincare": 984
+    "poincare": 20
   },
   "verifiers_status": {
     "verify_zeros": "ok",
@@ -428,7 +248,7 @@
         "count": 100,
         "dps": 30,
         "tolerance": "1.0e-24",
-        "elapsed_seconds": 14.8634,
+        "elapsed_seconds": 13.1939,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true
@@ -444,7 +264,7 @@
         "dps": 15,
         "intervals_checked": 2000,
         "sign_changes_detected": 50,
-        "elapsed_seconds": 10.4741
+        "elapsed_seconds": 11.665
       }
     },
     "parallel_verify": {
@@ -455,7 +275,7 @@
         "count": 200,
         "dps": 30,
         "workers": 8,
-        "elapsed_seconds": 8.6328,
+        "elapsed_seconds": 8.3026,
         "anomalies": [],
         "errors": [],
         "all_within_tolerance": true

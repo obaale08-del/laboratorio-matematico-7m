@@ -9,6 +9,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT_JSON = REPO_ROOT / "docs" / "milenio_red.json"
 DEFAULT_OUT_MD = REPO_ROOT / "docs" / "RED_MILENIO.md"
 
+EXCLUDED_DIRS = {".git", "__pycache__", ".lake"}
+
 PROBLEMS: dict[str, list[str]] = {
     "riemann": [
         r"\briemann\b",
@@ -47,8 +49,8 @@ PROBLEMS: dict[str, list[str]] = {
     ],
     "poincare": [
         r"\bpoincare\b|\bpoincaré\b",
-        r"\bvariedad\b",
-        r"\btopolog",
+        r"\bconjetura\s+(de\s+)?poincar[eé]\b",
+        r"\b3[-_\s]?variedad\b|\bvariedad\w*\s+topol[oó]g\w*",
     ],
 }
 
@@ -76,12 +78,9 @@ def _scan_file(path: Path) -> dict[str, Any]:
             total += cnt
             if cnt > 0 and core_pat_re.search(pat):
                 core_hits += cnt
-        # Requiere al menos 2 coincidencias si solo hubo términos secundarios
         if total > 0 and (core_hits >= 1 or total >= 2):
             matched_problems.append(prob)
             hit_counts[prob] = total
-
-
 
     lean_markers = len(LEAN_MARKERS.findall(text)) if path.suffix == ".lean" else 0
     return {
@@ -106,7 +105,7 @@ def build_milenio_network(
     for p in sorted(REPO_ROOT.rglob("*")):
         if not p.is_file():
             continue
-        if ".git" in p.parts or "__pycache__" in p.parts:
+        if any(part in EXCLUDED_DIRS for part in p.parts):
             continue
         if p.suffix.lower() not in TEXT_EXTS:
             continue

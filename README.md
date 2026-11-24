@@ -6,21 +6,27 @@ Entorno experimental y de auditoría para investigación matemática numérica, 
 
 ## Estructura del repositorio
 
-- `docs/`: `HEPTALOGO_MANIFEST.md`, `HEPTALOGO_REPORT.md`, `millennium_dossier.pdf` y `millennium_dossier_resumen.txt`.
-- `lean_templates/`: `lakefile.lean`, `Main.lean`, `PetruskaTactics.lean`, módulos base/constructivos y borradores o plantillas por línea temática.
-- `scripts/`: `analizador.py`, `crypto_shield.py`, `crypto_unshield.py`, `lean_auditor.py`, `lean_exporter.py`, `parallel_verify.py`, `turing_certify.py`, `verify_riemann_zeros.py` y `verify_zeros.py`.
+- `docs/`: `RED_MILENIO.md`, `CADENA_MILENIO.md`, `ANALISIS_ESTRUCTURA_MILENIO.md`, `verificacion_numerica.json`, `milenio_red.json`, `milenio_cadena.json`, `HEPTALOGO_MANIFEST.md`, `HEPTALOGO_REPORT.md`, `millennium_dossier.pdf` y `millennium_dossier_resumen.txt`.
+- `lean_templates/`: `lakefile.lean`, `Main.lean`, `PetruskaTactics.lean`, módulos base/constructivos, puentes numéricos-formales (`yang_mills_puente.lean`, `yang_mills_puente_enlace.lean`) y borradores o plantillas por línea temática.
+- `scripts/`: `analizador.py`, `analizar_estructura.py`, `crypto_shield.py`, `crypto_unshield.py`, `lean_auditor.py`, `lean_exporter.py`, `milenio_mapa.py`, `parallel_verify.py`, `puente_ym_lean.py`, `tejer_red.py`, `tejer_y_subir.py`, `turing_certify.py`, `verificar_puente_ym.sh`, `verify_riemann_zeros.py` y `verify_zeros.py`.
 
 ## Uso y criterios de portabilidad
 
 - Trabaja con rutas relativas a la raíz del repositorio (`pathlib.Path(__file__).resolve().parents[1]`) o argumentos explícitos.
 - Separa las funciones reutilizables de cálculo, auditoría o exportación respecto a la interfaz CLI (`argparse` / `if __name__ == "__main__":`).
-- Comprueba siempre `git status` y `git diff` antes de hacer `commit` y `push` a `main`.
 
 ---
 
 ## Uso rápido de los scripts (`scripts/`)
 
 Todos los scripts admiten `--help` y `--json` (donde aplica) y resuelven rutas relativas a la raíz del repositorio cuando no se indica una ruta explícita.
+
+### Mapa, red y puente Yang-Mills -> Lean 4
+
+- Mapear archivos por problema (excluyendo `.lake`, `.git` y `__pycache__`): `python3 scripts/milenio_mapa.py`
+- Tejer red, puentes y verificaciones en `docs/`: `python3 scripts/tejer_red.py`
+- Extraer cotas activas de Yang-Mills (`E_sweep`, `x_max` frente a umbral `0.25`): `python3 scripts/puente_ym_lean.py --json`
+- Ejecutar verificación completa del puente Yang-Mills en Lean 4: `bash scripts/verificar_puente_ym.sh`
 
 ### Auditoría y generación de plantillas Lean 4
 
