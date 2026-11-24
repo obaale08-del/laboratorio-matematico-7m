@@ -2,7 +2,21 @@
 
 > **Alcance:** Bitácora generada automáticamente desde el laboratorio experimental para trazar barridos numéricos, módulos Lean 4 y estado de trabajo antes de hacer `push`. Las cotas numéricas y plantillas formales no constituyen una resolución del problema abierto.
 
-## Registro 1: cuatro_facetas_y_serie_disipacion
+## Registro 1: series_duracion_y_forma
+- **Fecha (UTC):** `2026-11-24T10:16:40.498792+00:00`
+- **Git:** rama `main` en commit `79b884c` | cambios locales: `4`
+- **Bloques activos:** `5` | **Muestras activas:** `9`
+- **Notas:** Probadas series variando duracion (1.0..2.5, forma=0.80, dis=0.20) y forma (0.55..1.00, dur=1.5, dis=0.20) frente a delta=0.25
+
+| Archivo | Bloque | Umbral | E_sweep | x_max | Activos | Cruce |
+| :--- | :--- | ---: | ---: | ---: | ---: | :---: |
+| `ym_experimentos.txt` | `ym_experimentos` | 0.25 | 0.3169 | 0.3809 | 2 | True |
+| `ym_barrido.txt` | `1:Variando FORMA (duracion=1.0, disipacion=0.4)` | 0.25 | 0.2594 | 0.2943 | 2 | True |
+| `ym_barrido.txt` | `2:Variando DURACION (forma=0.80, disipacion=0.4)` | 0.25 | 0.276 | 0.2956 | 2 | True |
+| `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
+| `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
+
+## Registro 2: cuatro_facetas_y_serie_disipacion
 - **Fecha (UTC):** `2026-11-24T10:05:32.428753+00:00`
 - **Git:** rama `main` en commit `6e71767` | cambios locales: `8`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
@@ -16,7 +30,7 @@
 | `ym_barrido.txt` | `3:Variando DISIPACION (forma=0.80, duracion=1.0)` | 0.25 | 0.2788 | 0.3223 | 2 | True |
 | `ym_compensacion.txt` | `ym_compensacion` | 0.25 | 0.2608 | 0.2608 | 1 | True |
 
-## Registro 2: baseline_ym_puente
+## Registro 3: baseline_ym_puente
 - **Fecha (UTC):** `2026-11-24T09:13:11.939259+00:00`
 - **Git:** rama `main` en commit `6e71767` | cambios locales: `4`
 - **Bloques activos:** `5` | **Muestras activas:** `9`
