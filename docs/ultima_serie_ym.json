@@ -1,64 +1,64 @@
 {
-  "eje": "duracion",
+  "eje": "forma",
   "delta": 0.25,
   "base": {
     "E_cin": 0.0612,
-    "forma": 0.9,
-    "duracion": 1.5,
-    "disipacion": 0.15
+    "forma": 0.85,
+    "duracion": 2.0,
+    "disipacion": 0.2
   },
-  "E_sweep": 0.2637,
-  "x_max": 0.3481,
+  "E_sweep": 0.2343,
+  "x_max": 0.3281,
   "total_muestras": 4,
-  "muestras_cruzan_delta": 4,
+  "muestras_cruzan_delta": 3,
   "muestras": [
     {
-      "forma": 0.9,
-      "duracion": 1.0,
-      "disipacion": 0.15,
-      "E_cin": 0.0612,
-      "Aporte": 0.2025,
-      "E_tot": 0.2637,
-      "delta": 0.25,
-      "Margen": 0.0137,
-      "crosses_delta": true,
-      "etiqueta": "s1_duracion_1.0"
-    },
-    {
-      "forma": 0.9,
-      "duracion": 1.5,
-      "disipacion": 0.15,
-      "E_cin": 0.0612,
-      "Aporte": 0.2306,
-      "E_tot": 0.2918,
-      "delta": 0.25,
-      "Margen": 0.0418,
-      "crosses_delta": true,
-      "etiqueta": "s2_duracion_1.5"
-    },
-    {
-      "forma": 0.9,
+      "forma": 0.65,
       "duracion": 2.0,
-      "disipacion": 0.15,
+      "disipacion": 0.2,
       "E_cin": 0.0612,
-      "Aporte": 0.2587,
-      "E_tot": 0.3199,
+      "Aporte": 0.1731,
+      "E_tot": 0.2343,
       "delta": 0.25,
-      "Margen": 0.0699,
-      "crosses_delta": true,
-      "etiqueta": "s3_duracion_2.0"
+      "Margen": -0.0157,
+      "crosses_delta": false,
+      "etiqueta": "s1_forma_0.65"
     },
     {
-      "forma": 0.9,
-      "duracion": 2.5,
-      "disipacion": 0.15,
+      "forma": 0.75,
+      "duracion": 2.0,
+      "disipacion": 0.2,
       "E_cin": 0.0612,
-      "Aporte": 0.2869,
-      "E_tot": 0.3481,
+      "Aporte": 0.2044,
+      "E_tot": 0.2656,
       "delta": 0.25,
-      "Margen": 0.0981,
+      "Margen": 0.0156,
       "crosses_delta": true,
-      "etiqueta": "s4_duracion_2.5"
+      "etiqueta": "s2_forma_0.75"
+    },
+    {
+      "forma": 0.85,
+      "duracion": 2.0,
+      "disipacion": 0.2,
+      "E_cin": 0.0612,
+      "Aporte": 0.2356,
+      "E_tot": 0.2968,
+      "delta": 0.25,
+      "Margen": 0.0468,
+      "crosses_delta": true,
+      "etiqueta": "s3_forma_0.85"
+    },
+    {
+      "forma": 0.95,
+      "duracion": 2.0,
+      "disipacion": 0.2,
+      "E_cin": 0.0612,
+      "Aporte": 0.2669,
+      "E_tot": 0.3281,
+      "delta": 0.25,
+      "Margen": 0.0781,
+      "crosses_delta": true,
+      "etiqueta": "s4_forma_0.95"
     }
   ]
 }
